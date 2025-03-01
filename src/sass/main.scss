@@ -1,3 +1,5 @@
+@import "./base/reset";
+@import "./utilities/variables";
 @import "./components/header";
 @import "./components/year-check";
 @import "./components/number-guess";
@@ -9,5 +11,5 @@
 @import "./components/credits";
 @import "./components/scientist-memorizing";
 @import "./components/footer";
-@import "./base/reset";
-@import "./utilities/variables";
+
+
