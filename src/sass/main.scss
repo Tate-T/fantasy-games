@@ -1,6 +1,6 @@
 @import "./components/header";
 @import "./components/year-check";
-@import "./components/number-guess.sass";
+@import "./components/number-guess";
 @import "./components/rock-paper-scissors";
 @import "./components/calculator";
 @import "./components/time-calculator";
@@ -9,3 +9,5 @@
 @import "./components/credits";
 @import "./components/scientist-memorizing";
 @import "./components/footer";
+@import "./base/reset";
+@import "./utilities/variables";
