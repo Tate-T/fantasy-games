@@ -1,4 +1,5 @@
- <header class="header">
+<header class="header">
+    <div class="container">
         <div class="modal" style="display: none;">
             <div class="modal__content">
                 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
@@ -39,27 +40,38 @@
             </div>
           </div>
 
-          <img src="../img/header/logo.png" alt="logo">
-          <nav class="header__nav">
+         
+          <div class="header__nav">
+             <img src="../img/header/logo.png" alt="logo">
             <ul class="header__menu">
-                <li class="header__menu-item">Головна</li>
-                <li class="header__menu-item">Про нас</li>
                 <li class="header__menu-item">
-                    Інтерактив
-                    <ul class="header__submenu">
+                    <div class="header__menu-box">
+                    <a href="" class="header__menu-link">Інтерактив </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
+                        <path d="M10 1L5.5 6L1 1" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <ul class="header__submenu" style="display: none;">
                         <li class="header__submenu-item">Числовий</li>
                         <li class="header__submenu-item">Ігровий</li>
                         <li class="header__submenu-item">Ознайомчий</li>
                     </ul>
                 </li>
-                <li class="header__menu-item">Контакти</li>
+                <li class="header__menu-item">
+                    <a href="" class="header__menu-link">Наша команда</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="" class="header__menu-link">Контакти</a>
+                </li>
             </ul>
-        </nav>
-        <div class="header__theme">
+            <div class="header__theme">
             <img src="../img/header/white_teme.png" alt="white Theme" class="header__theme-white">
             <img src="../img/header/black_theme.png" class="header__theme-black" alt="">
         </div>
+        </div>
+        
         <h2 class="header__hello">
             <span class="header_hello-value"></span>
         </h2>
+    </div>
     </header>
