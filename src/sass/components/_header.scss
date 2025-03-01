@@ -1,0 +1,24 @@
+.header {
+    width: 100%;
+    height: 80px;
+    outline: solid red;
+
+    &__menu {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__menu-box {
+        display: flex;
+    }
+
+    &__nav {
+        display: flex;
+    }
+}
+
+// .modal {
+//     &__content {
+//         background-color: green;
+//     }
+// }
