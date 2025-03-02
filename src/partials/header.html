@@ -42,14 +42,16 @@
 
          
           <div class="header__nav">
-             <img src="../img/header/logo.png" alt="logo">
+             <img src="../img/header/logo.png" class="header__logo" alt="logo">
             <ul class="header__menu">
                 <li class="header__menu-item">
                     <div class="header__menu-box">
                     <a href="" class="header__menu-link">Інтерактив </a>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
+                    <button type="button" class="header__list-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="header__svg-list" width="11" height="7" viewBox="0 0 11 7" fill="none">
                         <path d="M10 1L5.5 6L1 1" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
+                    </button>
                     </div>
                     <ul class="header__submenu" style="display: none;">
                         <li class="header__submenu-item">Числовий</li>
@@ -65,13 +67,16 @@
                 </li>
             </ul>
             <div class="header__theme">
-            <img src="../img/header/white_teme.png" alt="white Theme" class="header__theme-white">
-            <img src="../img/header/black_theme.png" class="header__theme-black" alt="">
+                <button class="header__theme-toggle">
+                    <img src="../img/header/white_teme.png" alt="white Theme" class="header__theme-white">
+                    <img src="../img/header/black_theme.png" class="header__theme-black" alt="">
+                </button>
         </div>
+        <h2 class="header__hello">
+            <span class="header_hello-value">User</span>
+        </h2>
         </div>
         
-        <h2 class="header__hello">
-            <span class="header_hello-value"></span>
-        </h2>
+        
     </div>
     </header>
