@@ -14,8 +14,37 @@
 
     &__nav {
         display: flex;
+        padding-top: 32px;
     }
+
+    &__logo {
+        margin-right: 81px;
+        padding-bottom: 20px;
+    }
+
+    &__theme {
+        margin-left: 361px;
+    }
+
+    &__hello {
+        margin-left: 51px;
+    }
+
+    &__theme-black {
+        display: none;
+    }
+
+    &__list-button {
+        margin-left: 8px;
+    }
+ 
+    button {
+        border: none;
+        background-color: white;
+      }
+   
 }
+
 
 // .modal {
 //     &__content {
