@@ -1,0 +1,47 @@
+.time {
+
+    margin-top: 84px;
+
+    &__title {
+        color: $back-icon-color;
+        font-family: $base-font;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        margin-bottom: 36px;
+    }
+
+    &__butotn {
+        border-radius: 0px 20px 20px 0px;
+        background: $back-icon-color;
+        width: 35px;
+        height: 35px;
+        padding: 10px;
+        position: absolute;
+    }
+
+    &__number-input {
+        border-radius: 20px;
+        background: #D7D7D7;
+        padding: 10px 45px 10px 10px;
+        color: #7E7E7E;
+        font-family: $base-font;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 312px;
+    }
+
+    &__input-container {
+        display: flex;
+        gap: 166px;
+    }
+
+    &__fix {
+        position: relative;
+        
+    }
+}
