@@ -1,1 +1,12 @@
-// import "./js/";
+import "./JS/header";
+import "./JS/year-check";
+import "./JS/number-guess";
+import "./JS/rock-paper-scissors";
+import "./JS/calculator";
+import "./JS/time-calculator";
+import "./JS/dino-copy";
+import "./JS/football-play";
+import "./JS/biggest-number";
+import "./JS/credits";
+import "./JS/scientist-memorizing";
+import "./JS/footer"; 
