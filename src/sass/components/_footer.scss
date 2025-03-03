@@ -21,6 +21,10 @@
         display: block;
     }
 
+    &__list {
+        margin-right: 187px;
+    }
+
     &__list-text {
         color: #000;
         font-family: "Montserrat Alternates";
@@ -28,6 +32,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: 170%;
+
     }
 
     &__button {
