@@ -43,6 +43,7 @@ align-items: flex-start;
 gap: 10px;
 border-radius: 20px;
 background: #000;
+border: none;
     }
 
     &__text {
@@ -61,6 +62,8 @@ align-items: flex-start;
 gap: 10px;
 border-radius: 20px;
 background: #D7D7D7;
+border: none;
+margin-right: 36px;
     }
 
     &__input::placeholder {
@@ -70,5 +73,12 @@ font-size: 12px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+    }
+
+    &__svg {
+        width: 165px;
+height: 70px;
+flex-shrink: 0;
+margin-right: 185px;
     }
 }
