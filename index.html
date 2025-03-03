@@ -14,8 +14,15 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <script type="module" crossorigin src="/fantasy-games/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/fantasy-games/assets/index-aeb6ee01.css">
+  <link rel="stylesheet" href="/fantasy-games/assets/index-c747e384.css">
 </head>
+<style>
+  body {
+    background-image: url(/fantasy-games/assets/background-4d317863.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+</style>
 
 <body>
   <header class="header">
@@ -93,6 +100,7 @@
                 </button>
         </div>
         <h2 class="header__hello">
+            Вітаємо,
             <span class="header_hello-value">User</span>
         </h2>
         </div>
@@ -100,29 +108,53 @@
         
     </div>
     </header>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const modal1 = document.querySelector(".modal");
+  const modal2 = document.querySelector(".modal2");
+  const saveButton = document.querySelector(".modal__save-button");
+  const closeButtons = document.querySelectorAll(".modal svg");
 
+  // Відкриваємо першу модалку при завантаженні сторінки
+  modal1.classList.add("modal--active");
+
+  saveButton.addEventListener("click", function () {
+    modal1.classList.remove("modal--active");
+    setTimeout(() => {
+      modal2.classList.add("modal--active");
+    }, 300);
+  });
+
+  closeButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      this.closest(".modal").classList.remove("modal--active");
+    });
+  });
+});
+
+</script>
   <section class="years">
-    <div class="container">
-    <h2 class="years__bigtittle">Популярні інетрактивні ігри</h2>
-    <svg class="years__icon" xmlns="http://www.w3.org/2000/svg" width="536" height="2" viewBox="0 0 536 2" fill="none">
-        <path d="M0 1L536 1.00005" stroke="black"/>
-      </svg>
-    <h3 class="years__tittle">Перевір в який рік ти народився</h3>
-    <form   class="years__form" action="">
-        <label class="years__lab"  for=""> 
-            <input placeholder="Введіть рік народження" class="years__input" type="text">
-        </label>
-        <button class="years__button" type="submit">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <circle cx="6.52174" cy="6.52174" r="5.52174" stroke="white" stroke-width="2"/>
-                <path d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z" fill="white"/>
-              </svg>
-        </button>
-    </form>
-    <svg xmlns="http://www.w3.org/2000/svg" width="536" height="2" viewBox="0 0 536 2" fill="none">
-        <path d="M0 1L536 1.00005" stroke="black"/>
-      </svg>
-    </div>
+  <div class="container">
+  <h2 class="years__bigtittle">Популярні інетрактивні ігри</h2>
+  <svg class="years__icon" xmlns="http://www.w3.org/2000/svg" width="536" height="2" viewBox="0 0 536 2" fill="none">
+      <path d="M0 1L536 1.00005" stroke="black"/>
+    </svg>
+  <h3 class="years__tittle">Перевір в який рік ти народився</h3>
+  <form   class="years__form" action="">
+      <label class="years__lab"  for=""> 
+          <input placeholder="Введіть рік народження" class="years__input" type="text">
+      </label>
+      <button class="years__button" type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <circle cx="6.52174" cy="6.52174" r="5.52174" stroke="white" stroke-width="2"/>
+              <path d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z" fill="white"/>
+            </svg>
+      </button>
+  </form>
+  <svg xmlns="http://www.w3.org/2000/svg" width="536" height="2" viewBox="0 0 536 2" fill="none">
+      <path d="M0 1L536 1.00005" stroke="black"/>
+    </svg>
+  </div>
 </section>
   <section class="number">
   <div class="container">
@@ -182,19 +214,22 @@
     </div>
 </div>
 </section>
-  <section class="time-calculator">
+  <section class="time">
     <div class="container">
-    <h1>Калькулятор часу</h1>
-    <div class="input-container">
-        <input type="number" id="numberInput" placeholder="Введіть число">
-        <button class="butotn">
+    <h2 class="time__title">Калькулятор часу</h2>
+    <div class="time__input-container">
+        <div class="time__fix">
+        <input type="number" class="time__number-input" placeholder="Введіть число">
+        <button class="time__butotn">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <circle cx="6.52174" cy="6.52174" r="5.52174" stroke="white" stroke-width="2"/>
                 <path d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z" fill="white"/>
               </svg>
         </button>
     </div>
-    <div class="result" id="result">3 дн. 15:45:01</div>
+        <h2 class="time__result" id="result">3 дн. 15:45:01</h2>
+    </div>
+    
 </div>
 </section>
   <section class="dino">
@@ -219,6 +254,7 @@
 </section>
 
   <section class="credits">
+    <div class="container">
     <div class="footer__left-svg-box">
         <svg class="footer__left-svg">
             <use href="../img/credits.svg#credits-left"></use>
@@ -247,6 +283,7 @@
     <svg class="footer__right-svg">
         <use href="../img/credits.svg#credits-right"></use>
     </svg>
+</div>
 </div>
 </section>
   <section class="sceinists">
