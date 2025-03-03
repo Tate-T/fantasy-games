@@ -1,5 +1,6 @@
 .biggest__number {
- 
+  text-align: center;
+  margin-top: 50px;
 }
 
 .container {
@@ -9,35 +10,13 @@
 }
 
 .biggest__title {
-  color: #000;
-font-family: "Montserrat Alternates";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
+
 
 .input__clein {
-  color: #7E7E7E;
-font-family: "Montserrat Alternates";
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-display: inline-flex;
-padding: 10px 20px;
-align-items: flex-start;
-gap: 10px;
-border-radius: 20px;
-background: #D7D7D7;
-box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  font-size: 16px;
 }
 
-.biggest__text {
-  color: #000;
-font-family: "Montserrat Alternates";
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
