@@ -1,5 +1,6 @@
 .game{
 padding-top: 36px;
+padding-bottom: 36px;
 display: flex;
 justify-content:center ;
 
@@ -15,8 +16,6 @@ justify-content:center ;
         font-weight: 400;
         line-height: normal;
         margin-bottom: 36px;
-
-align-items: center;
     }
 
     &__white-text{
@@ -102,6 +101,8 @@ background: #000;
 display: flex;
 flex-direction: column;
 padding-top: 55px;
+width: 93px;
+height: 60px;
 }
 
 &__total{
@@ -150,6 +151,6 @@ line-height: 170%; /* 20.4px */
 &__box{
     display: flex;
     gap: 104px;
-    justify-content: center;
+padding-left: 190px;
 }
 }
