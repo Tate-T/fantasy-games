@@ -1,66 +1,80 @@
 .years {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     margin-top: 36px;
-   &__bigtittle{
-       color: #000;
-   font-family: "Montserrat Alternates";
-   font-size: 24px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: normal;
-   }
-   
-   &__tittle {
-       color: #000;
-   font-family: "Montserrat Alternates";
-   font-size: 16px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: normal;
-   
-   }
-   
-   &__icon {
-       margin-top: 36px;
-       margin-bottom: 36px;
-   }
-   &__form {
-   //     display: inline-flex;
-   //     padding: 10px 45px 10px 10px;
-   //     align-items: flex-start;
-   //     gap: 10px;
-   //     border-radius: 20px;
-   // background: #D7D7D7;
-   margin-top: 36px;
-   }
-   &__text{
-       color: #7E7E7E;
-       font-family: "Montserrat Alternates";
-       font-size: 12px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-   
-   }
-   
-   // &__lab{
-   
-   // }
-   
-   
-   &__input{
-       display: inline-flex;
-       padding: 10px 45px 10px 10px;
-       align-items: flex-start;
-       gap: 10px;
-       border-radius: 20px;
-   background: #D7D7D7;
-   }
-   &__button{
-       display: inline-flex;
-   padding: 10px;
-   align-items: flex-start;
-   gap: 10px;
-   border-radius: 0px 20px 20px 0px;
-   background: #000;
-   }
-   }
+
+    &__bigtittle {
+
+        text-align: center;
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__tittle {
+
+        text-align: center;
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+    }
+
+    &__icon {
+        margin-top: 36px;
+        margin-bottom: 36px;
+    }
+
+    &__form {
+        //     display: inline-flex;
+        //     padding: 10px 45px 10px 10px;
+        //     align-items: flex-start;
+        //     gap: 10px;
+        //     border-radius: 20px;
+        // background: #D7D7D7;
+        margin-top: 36px;
+        margin-bottom: 36px;
+    }
+
+    &__text {
+        color: #7E7E7E;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+    }
+
+    // &__lab{
+
+    // }
+
+
+    &__input {
+        display: inline-flex;
+        padding: 10px 45px 10px 10px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 20px;
+        background: #D7D7D7;
+    }
+
+    &__button {
+
+        display: inline-flex;
+        padding: 10px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 0px 20px 20px 0px;
+        background: #000;
+    }
+}
