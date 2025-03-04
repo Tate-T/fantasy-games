@@ -29,12 +29,12 @@ const team = [
     {
         name: "Денис",
         role: "Розробник",
-        image: "images/denys.jpg",
+        image: "./img/credits/denys.png",
     },
     {
         name: "Настя",
         role: "Розробник",
-        image: "images/nastya.jpg",
+        image: "./img/credits/nastya.png",
     },
     {
         name: "Діна",
