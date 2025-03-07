@@ -14,15 +14,9 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <script type="module" crossorigin src="/fantasy-games/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/fantasy-games/assets/index-d5e142c3.css">
+  <link rel="stylesheet" href="/fantasy-games/assets/index-8b653b5a.css">
 </head>
-<style>
-  body {
-    background-image: url(/fantasy-games/assets/background-4d317863.png);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-</style>
+
 
 <body>
   <header class="header">
@@ -108,31 +102,7 @@
         
     </div>
     </header>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-  const modal1 = document.querySelector(".modal");
-  const modal2 = document.querySelector(".modal2");
-  const saveButton = document.querySelector(".modal__save-button");
-  const closeButtons = document.querySelectorAll(".modal svg");
 
-  // Відкриваємо першу модалку при завантаженні сторінки
-  modal1.classList.add("modal--active");
-
-  saveButton.addEventListener("click", function () {
-    modal1.classList.remove("modal--active");
-    setTimeout(() => {
-      modal2.classList.add("modal--active");
-    }, 300);
-  });
-
-  closeButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      this.closest(".modal").classList.remove("modal--active");
-    });
-  });
-});
-
-</script>
   <section class="years">
     <div class="container">
     <h2 class="years__bigtittle">Популярні інетрактивні ігри</h2>
@@ -219,10 +189,13 @@
               </svg>
         </button>
     </div>
+        <p class="time__points">..............................</p>
+
         <h2 class="time__result" id="result">3 дн. 15:45:01</h2>
-    </div>
+
     
-</div>
+    </div>
+    </div>
 </section>
   <section class="dino">
     <div class="container">
