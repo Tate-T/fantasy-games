@@ -14,7 +14,7 @@ const team = [
     {
         name: "Тарас",
         role: "Тімлід",
-        image: "images/taras.jpg",
+        image: "./img/credits/taras.png",
     },
     {
         name: "Діма",
