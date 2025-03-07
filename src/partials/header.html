@@ -81,28 +81,3 @@
         
     </div>
     </header>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-  const modal1 = document.querySelector(".modal");
-  const modal2 = document.querySelector(".modal2");
-  const saveButton = document.querySelector(".modal__save-button");
-  const closeButtons = document.querySelectorAll(".modal svg");
-
-  // Відкриваємо першу модалку при завантаженні сторінки
-  modal1.classList.add("modal--active");
-
-  saveButton.addEventListener("click", function () {
-    modal1.classList.remove("modal--active");
-    setTimeout(() => {
-      modal2.classList.add("modal--active");
-    }, 300);
-  });
-
-  closeButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      this.closest(".modal").classList.remove("modal--active");
-    });
-  });
-});
-
-</script>
