@@ -127,7 +127,6 @@
 
 // Загальні стилі для модалок (.modal та .modal2)
 .modal {
-    display: none; 
     position: fixed;
     top: 0;
     left: 0;
@@ -137,8 +136,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;
-    visibility: hidden;
+    // opacity: 0;
+    // visibility: hidden;
+    z-index: 1;
     transition: opacity 0.3s ease, visibility 0.3s ease;
   
     &--active {
