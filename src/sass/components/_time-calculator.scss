@@ -1,5 +1,8 @@
 .time {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     margin-top: 84px;
 
     &__title {
@@ -17,9 +20,11 @@
         border-radius: 0px 20px 20px 0px;
         background: $back-icon-color;
         width: 35px;
-        height: 35px;
+        height: 36px;
         padding: 10px;
         position: absolute;
+        right: 1px;
+        top: 1px;
     }
 
     &__number-input {
@@ -33,11 +38,12 @@
         font-weight: 400;
         line-height: normal;
         margin-left: 312px;
+        position: relative;
     }
 
     &__input-container {
         display: flex;
-        gap: 166px;
+        gap: 30px;
     }
 
     &__fix {
