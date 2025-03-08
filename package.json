@@ -1,13 +1,15 @@
 {
-    "homepage": "https://tate-t.github.io/team-2",
-    "name": "team-2",
+    "homepage": "https://tate-t.github.io/fantasy-games/",
+    "name": "fantasy-games",
     "private": true,
     "version": "0.0.0",
     "type": "module",
     "scripts": {
         "dev": "vite",
         "build": "vite build --base=/fantasy-games/",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
     },
     "devDependencies": {
         "gh-pages": "^6.3.0",

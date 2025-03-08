@@ -60,6 +60,62 @@
         font-weight: 400;
         line-height: normal;
     }
+
+ 
+    &__menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      position: relative;
+    }
+    
+    &__menu-item {
+      position: relative;
+    }
+    
+    &__menu-box {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    
+    &__submenu {
+      display: none;
+      position: absolute;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      list-style: none;
+      min-width: 150px;
+      top: 100%;
+      left: 0;
+      z-index: 100;
+    
+      &.show {
+        display: block;
+      }
+    
+      &-item {
+        padding: 8px 12px;
+        cursor: pointer;
+    
+        &:hover {
+          background: #f0f0f0;
+        }
+      }
+    }
+    
+    &__list-button {
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+
+
+    
+    
  
     button {
         border: none;
