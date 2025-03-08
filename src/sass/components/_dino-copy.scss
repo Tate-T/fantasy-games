@@ -1,22 +1,24 @@
-.dino{
+.dino {
     padding-top: 36px;
     padding-bottom: 36px;
-display: flex;
-justify-content: center;
-text-align: center;
-    &__title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    &__title {
         color: #000;
-font-family: "Montserrat Alternates";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-bottom: 36px;
+        font-family: "Montserrat Alternates";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 36px;
     }
 
-    &__game{
+    &__game {
         width: 720px;
-height: 241px;
-flex-shrink: 0;
-background-color: gray;
+        height: 241px;
+        flex-shrink: 0;
+        background-color: gray;
+    }
 }
