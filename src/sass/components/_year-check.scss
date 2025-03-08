@@ -1,12 +1,12 @@
 .years {
-    display: flex;
+    // display: flex;
     align-items: center;
     justify-content: center;
 
     margin-top: 36px;
 
     &__bigtittle {
-
+margin-bottom: 36px;
         text-align: center;
         color: #000;
         font-family: "Montserrat Alternates";
@@ -42,6 +42,8 @@
         // background: #D7D7D7;
         margin-top: 36px;
         margin-bottom: 36px;
+       margin-left: 450px;
+
     }
 
     &__text {
@@ -59,17 +61,43 @@
     // }
 
 
+  
+
     &__input {
-        display: inline-flex;
-        padding: 10px 45px 10px 10px;
-        align-items: flex-start;
-        gap: 10px;
+        
+        width: 230px;
         border-radius: 20px;
         background: #D7D7D7;
+        padding: 10px 45px 10px 10px;
+        color: #7E7E7E;
+        font-family: $base-font;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: relative;
+    }
+
+    &__conteiner {
+        display: flex;
+        gap: 30px;
+        margin-left: 1px;
+    }
+
+    &__fix {
+        position: relative;
+        
     }
 
     &__button {
-
+        border-radius: 0px 20px 20px 0px;
+        background: $back-icon-color;
+        width: 35px;
+        height: 36px;
+        padding: 10px;
+        position: absolute;
+        right: 1px;
+        top: 1px;
         display: inline-flex;
         padding: 10px;
         align-items: flex-start;

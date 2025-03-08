@@ -1,5 +1,5 @@
 .number {
-    display: flex;
+    // display: flex;
     margin-top: 25px;
 // margin-left: 250px;
 align-items: center;
@@ -34,16 +34,66 @@ margin-top: 36px;
 }
 
 &__input{
-    display: inline-flex;
-padding: 10px 45px 10px 10px;
-align-items: flex-start;
-gap: 10px;
-border-radius: 20px;
-background: #D7D7D7;
+    width: 170px;
+    border-radius: 20px;
+    background: #D7D7D7;
+    padding: 10px 45px 10px 10px;
+    color: #7E7E7E;
+    font-family: $base-font;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    
 }
 
 &__form {
     margin-top: 36px;
+    margin-left: 450px;
+  
+
+}
+
+
+&__conteinerr {
+    display: flex;
+    gap: 30px;
+    margin-left: 1px;
+
+}
+
+
+
+&__fixx {
+    position: relative;
+    
+}
+
+&__button {
+    border-radius: 0px 20px 20px 0px;
+    background: $back-icon-color;
+    width: 35px;
+    height: 36px;
+    padding: 10px;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    display: inline-flex;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 0px 20px 20px 0px;
+    background: #000;
+}
+&__guess{
+
+text-align: right;
+font-family: "Montserrat Alternates";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
 }
