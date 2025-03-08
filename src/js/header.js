@@ -12,7 +12,7 @@ document.addEventListener("click", function(event) {
   }
 });
 
-cowindow.onload = function () {
+window.onload = function () {
     const modal = document.querySelector('.modal'); // Модальне вікно
     const input = document.getElementById('modal__name-input'); // Поле введення імені
     const saveButton = document.querySelector('.modal__save-button'); // Кнопка збереження
