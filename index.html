@@ -14,7 +14,7 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <script type="module" crossorigin src="/fantasy-games/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/fantasy-games/assets/index-bbdc5bea.css">
+  <link rel="stylesheet" href="/fantasy-games/assets/index-09a365b8.css">
 </head>
 
 
@@ -110,35 +110,48 @@
     <h2 class="years__bigtittle">Популярні інетрактивні ігри</h2>
     <h3 class="years__tittle">Перевір в який рік ти народився</h3>
     <form   class="years__form" action="">
-        <label class="years__lab"  for=""> 
+      <div class="years__conteiner">
+        <div class="years__fix">
             <input placeholder="Введіть рік народження" class="years__input" type="text">
-        </label>
         <button class="years__button" type="submit">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <circle cx="6.52174" cy="6.52174" r="5.52174" stroke="white" stroke-width="2"/>
                 <path d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z" fill="white"/>
               </svg>
         </button>
+    </div>
+</div>
     </form>
     </div>
 </section>
-  <section class="number">
-  <div class="container">
-  <h3 class="number__tittle">Перевір в який рік ти народився</h3>
-  <form class="number__form" action="">
-    <label class="number__lab" for="">
-      <input placeholder="Введіть число" class="number__input" type="text" />
-    </label>
-    <button class="number__button" type="submit">
-        <svg class="number__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <circle cx="6.52174" cy="6.52174" r="5.52174" stroke="white" stroke-width="2"/>
-            <path d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34665 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z" fill="white"/>
-          </svg>
-    </button>
-  </form>
-</div>
-</section>
 
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>Вгадай число</title>
+</head>
+<body>
+    <section class="number">
+        <div class="container">
+            <h3 class="number__tittle">Вгадай число, яке загадав комп’ютер</h3>
+            <form class="number__form" action="">
+                <div class="number__conteinerr">
+                    <div class="number__fixx">
+                        <input placeholder="Введіть число" class="number__input" type="text" id="numberInput"/>
+                        <button class="number__button" type="submit">
+                            <svg class="number__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <circle cx="6.52174" cy="6.52174" r="5.52174" stroke="white" stroke-width="2" />
+                                <path d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34665 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z" fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <p class="number__guess" id="result"></p>
+        </div>
+    </section>
+</body>
+</html>
 
   <section class="game">
     <div class="container">
@@ -202,7 +215,9 @@
   <section class="dino">
     <div class="container">
         <h2 class="dino__title">Google динозавр</h2>
-      <div class="dino__box"></div>  
+        <div class="dino__game">
+            
+        </div>
     </div>
 </section>
   <section class="football__play">
@@ -214,7 +229,6 @@
     />
   </div>
 </section>
-
   <section class="biggest__number">
   <div class="container">
     <h2 class="biggest__title">Введіть 3 числа</h2>
@@ -232,7 +246,7 @@
     <div class="container">
         <div class="credits__flex-box">
                 <svg class="credits__left-svg credits__svg">
-                    <use href="/fantasy-games/assets/left-bc406999.svg#icon-credits-left"></use>
+                    <use href="/fantasy-games/assets/left-e2b7f48f.svg#icon-credits-left"></use>
                 </svg>
 
         
@@ -255,7 +269,7 @@
                     </ul></div>
         </div>
             <svg class="credits__right-svg credits__svg">
-                <use href="/fantasy-games/assets/right-bfb5ee4e.svg#icon-credits-right"></use>
+                <use href="/fantasy-games/assets/right-0a7801ba.svg#icon-credits-right"></use>
             </svg>
 
 
@@ -296,7 +310,7 @@
     <div class="container">
     <div class="footer__big-div">
     <svg class="footer__svg">
-        <use href="/fantasy-games/assets/footer-a09a7be3.svg#icon-footer-svg"></use>
+        <use href="/fantasy-games/assets/footer-1727510a.svg#icon-footer-svg"></use>
     </svg>
     <ul class="footer__list">
         <li class="footer__item">
