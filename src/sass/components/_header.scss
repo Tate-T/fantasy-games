@@ -1,220 +1,224 @@
 .header {
-    width: 100%;
-    height: 80px;
-    outline: solid red;
+  width: 100%;
+  height: 80px;
+  outline: solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__menu {
+    display: flex;
+    gap: 50px;
+  }
+
+  &__menu-box {
+    display: flex;
+  }
+
+  &__nav {
+    display: flex;
+    padding-top: 32px;
+  }
+
+  &__logo {
+    margin-right: 81px;
+    padding-bottom: 20px;
+  }
+
+  &__theme {
+    margin-left: 361px;
+  }
+
+  &__hello {
+    margin-left: 51px;
+  }
+
+  &__theme-black {
+    display: none;
+  }
+
+  &__list-button {
+    margin-left: 8px;
+  }
+
+  &__menu-link {
+    color: $back-icon-color;
+    font-family: $base-font;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__hello {
+    color: $back-icon-color;
+    text-align: right;
+    font-family: $base-font;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+
+  &__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+
+  &__menu-item {
+    position: relative;
+  }
+
+  &__menu-box {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    cursor: pointer;
+  }
 
-    &__menu {
-        display: flex;
-        gap: 50px;
-    }
+  &__submenu {
+    display: none;
+    position: absolute;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    list-style: none;
+    min-width: 150px;
+    top: 100%;
+    left: 0;
+    z-index: 100;
 
-    &__menu-box {
-        display: flex;
-    }
-
-    &__nav {
-        display: flex;
-        padding-top: 32px;
-    }
-
-    &__logo {
-        margin-right: 81px;
-        padding-bottom: 20px;
+    &.show {
+      display: block;
     }
 
-    &__theme {
-        margin-left: 361px;
-    }
-
-    &__hello {
-        margin-left: 51px;
-    }
-
-    &__theme-black {
-        display: none;
-    }
-
-    &__list-button {
-        margin-left: 8px;
-    }
-
-    &__menu-link {
-        color: $back-icon-color;
-        font-family: $base-font;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-
-    &__hello {
-        color: $back-icon-color;
-        text-align: right;
-        font-family: $base-font;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-
- 
-    &__menu {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      position: relative;
-    }
-    
-    &__menu-item {
-      position: relative;
-    }
-    
-    &__menu-box {
-      display: flex;
-      align-items: center;
+    &-item {
+      padding: 8px 12px;
       cursor: pointer;
-    }
-    
-    &__submenu {
-      display: none;
-      position: absolute;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      padding: 10px;
-      list-style: none;
-      min-width: 150px;
-      top: 100%;
-      left: 0;
-      z-index: 100;
-    
-      &.show {
-        display: block;
-      }
-    
-      &-item {
-        padding: 8px 12px;
-        cursor: pointer;
-    
-        &:hover {
-          background: #f0f0f0;
-        }
+
+      &:hover {
+        background: #f0f0f0;
       }
     }
-    
-    &__list-button {
-      border: none;
-      background: transparent;
-      cursor: pointer;
-      margin-left: 5px;
-    }
+  }
+
+  &__list-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+
+  
 
 
-    
-    
- 
-    button {
-        border: none;
-        background-color: white;
-      }
-   
+
+  button {
+    border: none;
+    background-color: white;
+  }
+
 }
 
 
-// Загальні стилі для модалок (.modal та .modal2)
+
 .modal {
+
+
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     // opacity: 0;
     // visibility: hidden;
     z-index: 1;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-  
-    &--active {
-      opacity: 1;
-      visibility: visible;
+  }
+
+   &__icons {
+    display: grid;
+    gap: 80px;
+   }
+
+  &__content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 576px;
+    height: 316px;
+    text-align: center;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+
+    svg {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
     }
-  
-    &__content {
-      background: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      width: 400px;
-      text-align: center;
-      position: relative;
-      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
-      transform: scale(0.8);
-      transition: transform 0.3s ease;
-  
-      .modal--active & {
-        transform: scale(1);
-      }
-  
-      svg {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-      }
+  }
+
+  &__text {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  &__input-section {
+    margin-top: 15px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
     }
-  
-    &__text {
-      font-size: 18px;
-      margin-bottom: 15px;
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
     }
-  
-    &__input-section {
-      margin-top: 15px;
-  
-      label {
-        display: block;
-        margin-bottom: 5px;
-      }
-  
-      input {
-        width: 100%;
-        padding: 10px;
-        border-radius: 8px;
-        border: 1px solid #ccc;
-      }
-  
-      .modal__save-button {
-        margin-top: 10px;
-        padding: 10px 20px;
-        background: black;
-        color: white;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: 0.3s;
-  
-        &:hover {
-          background: darkgray;
-        }
-      }
-    }
-  
-    &__icons {
-      display: flex;
-      justify-content: center;
-      margin-top: 15px;
-  
-      img {
-        width: 40px;
-        height: 40px;
-        margin: 0 5px;
+
+    .modal__save-button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: black;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background: darkgray;
       }
     }
   }
-  
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+
+    img {
+      width: 40px;
+      height: 40px;
+      margin: 0 5px;
+    }
+  }
+}

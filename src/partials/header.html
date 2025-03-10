@@ -1,44 +1,33 @@
 <header class="header">
     <div class="container">
-        <div class="modal">
-            <div class="modal__content">
-                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
-                    <path d="M1 1L8.5 8.5M16 16L8.5 8.5M8.5 8.5L16 1L1 16" stroke="black"/>
-                  </svg>
-                <div class="modal__welcome-message">
-                    <h2 class="modal__text">Привіт!
-                        Ви потрапили на сайт інтерактивних ігор та завдань
-                        Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
-                        Бажаємо Вам гарно провести час!
-                    </h2>
-                </div>
-                <div class="modal__input-section">
-                    <label for="modal__name-input">Введіть своє ім'я:</label>
-                    <input type="text" id="modal__name-input" placeholder="Ваше ім'я...">
-                    <button type="button" class="modal__save-button">Зберегти</button>
-                </div>
-                <div class="modal__icons">
-                    <img src="../img/header/sword1.png" alt="Sword Icon" class="modal__icon">
-                    <img src="../img/header/puzzle1.png" alt="Puzzle Icon" class="modal__icon2">
-                    <img src="../img/header/game-development1.png" alt="Game Controller Icon" class="modal__icon3">
-                    <img src="../img/header/tic-tac-toe1.png" alt="Tic-Tac-Toe Icon" class="modal__icon4">
-                </div>
+      <div class="modal" data-open="true">
+        <div class="modal__box">
+        <div class="modal__content">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                <path d="M1 1L8.5 8.5M16 16L8.5 8.5M8.5 8.5L16 1L1 16" stroke="black"/>
+            </svg>
+            <div class="modal__welcome-message">
+                <h2 class="modal__text">Привіт!
+                    Ви потрапили на сайт інтерактивних ігор та завдань.
+                    Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
+                    Бажаємо Вам гарно провести час!
+                </h2>
+            </div>
+            <div class="modal__input-section">
+                <label for="modal__name-input">Введіть своє ім'я:</label>
+                <input type="text" id="modal__name-input" placeholder="Ваше ім'я...">
+                <button type="button" class="modal__save-button">Зберегти</button>
+            </div>
+            <div class="modal__icons">
+              <img src="../img/header/sword1.png" alt="Sword" class="modal__icon">
+              <img src="../img/header/puzzle1.png" alt="Puzzle" class="modal__icon">
+              <img src="../img/header/game-development1.png" alt="Game" class="modal__icon">
+              <img src="../img/header/tic-tac-toe1.png" alt="TicTacToe" class="modal__icon">
             </div>
         </div>
-        <div class="modal2" style="display: none;">
-           <div class="modal-content">
-                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
-                    <path d="M1 1L8.5 8.5M16 16L8.5 8.5M8.5 8.5L16 1L1 16" stroke="black"/>
-                  </svg>
-              <h2>Дякую за підписку</h2>
-              <div class="modal__icons">
-                <img src="../img/header/sword1.png" alt="Sword Icon" class="modal__icon">
-                <img src="../img/header/puzzle1.png" alt="Puzzle Icon" class="modal__icon2">
-                <img src="../img/header/game-development1.png" alt="Game Controller Icon" class="modal__icon3">
-                <img src="../img/header/tic-tac-toe1.png" alt="Tic-Tac-Toe Icon" class="modal__icon4">
-            </div>
-            </div>
-          </div>
+      </div>
+    </div>
+    
 
          
           <div class="header__nav">
@@ -69,14 +58,16 @@
               
               
             <div class="header__theme">
-                <button class="header__theme-toggle">
-                    <img src="./img/header/white_teme.png" alt="white Theme" class="header__theme-white">
-                    <img src="./img/header/black_theme.png" class="header__theme-black" alt="">
-                </button>
+              <button id="header__theme-toggle-light" class="header__theme-toggle active">
+                <img src="../img/header/white_teme.png" alt="Light Theme">
+              </button>
+              <button id="theme-toggle-dark" class="header__theme-toggle">
+                <img src="../img/header/black_theme.png" alt="Dark Theme">
+              </button>
         </div>
         <h2 class="header__hello">
             Вітаємо,
-            <span class="header_hello-value">User</span>
+            <span class="header__hello-value">User</span>
         </h2>
         </div>
         
