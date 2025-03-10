@@ -6,7 +6,7 @@
     margin-top: 36px;
 
     &__bigtittle {
-margin-bottom: 36px;
+        margin-bottom: 36px;
         text-align: center;
         color: #000;
         font-family: "Montserrat Alternates";
@@ -42,7 +42,7 @@ margin-bottom: 36px;
         // background: #D7D7D7;
         margin-top: 36px;
         margin-bottom: 36px;
-       margin-left: 450px;
+        margin-left: 450px;
 
     }
 
@@ -61,10 +61,10 @@ margin-bottom: 36px;
     // }
 
 
-  
+
 
     &__input {
-        
+
         width: 230px;
         border-radius: 20px;
         background: #D7D7D7;
@@ -86,7 +86,7 @@ margin-bottom: 36px;
 
     &__fix {
         position: relative;
-        
+
     }
 
     &__button {
@@ -104,5 +104,18 @@ margin-bottom: 36px;
         gap: 10px;
         border-radius: 0px 20px 20px 0px;
         background: #000;
+    }
+&__box{
+    display: flex;
+}
+    &__resultat {
+   margin-left: 146px;
+        text-align: center;
+
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 }
