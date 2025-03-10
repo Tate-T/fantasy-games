@@ -14,52 +14,41 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <script type="module" crossorigin src="/fantasy-games/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/fantasy-games/assets/index-b0ba8f21.css">
+  <link rel="stylesheet" href="/fantasy-games/assets/index-b562ea07.css">
 </head>
 
 
 <body>
   <header class="header">
     <div class="container">
-        <div class="modal">
-            <div class="modal__content">
-                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
-                    <path d="M1 1L8.5 8.5M16 16L8.5 8.5M8.5 8.5L16 1L1 16" stroke="black"/>
-                  </svg>
-                <div class="modal__welcome-message">
-                    <h2 class="modal__text">Привіт!
-                        Ви потрапили на сайт інтерактивних ігор та завдань
-                        Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
-                        Бажаємо Вам гарно провести час!
-                    </h2>
-                </div>
-                <div class="modal__input-section">
-                    <label for="modal__name-input">Введіть своє ім'я:</label>
-                    <input type="text" id="modal__name-input" placeholder="Ваше ім'я...">
-                    <button type="button" class="modal__save-button">Зберегти</button>
-                </div>
-                <div class="modal__icons">
-                    <img src="../img/header/sword1.png" alt="Sword Icon" class="modal__icon">
-                    <img src="../img/header/puzzle1.png" alt="Puzzle Icon" class="modal__icon2">
-                    <img src="../img/header/game-development1.png" alt="Game Controller Icon" class="modal__icon3">
-                    <img src="../img/header/tic-tac-toe1.png" alt="Tic-Tac-Toe Icon" class="modal__icon4">
-                </div>
+      <div class="modal" data-open="true">
+        <div class="modal__box">
+        <div class="modal__content">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                <path d="M1 1L8.5 8.5M16 16L8.5 8.5M8.5 8.5L16 1L1 16" stroke="black"/>
+            </svg>
+            <div class="modal__welcome-message">
+                <h2 class="modal__text">Привіт!
+                    Ви потрапили на сайт інтерактивних ігор та завдань.
+                    Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
+                    Бажаємо Вам гарно провести час!
+                </h2>
+            </div>
+            <div class="modal__input-section">
+                <label for="modal__name-input">Введіть своє ім'я:</label>
+                <input type="text" id="modal__name-input" placeholder="Ваше ім'я...">
+                <button type="button" class="modal__save-button">Зберегти</button>
+            </div>
+            <div class="modal__icons">
+              <img src="../img/header/sword1.png" alt="Sword" class="modal__icon">
+              <img src="../img/header/puzzle1.png" alt="Puzzle" class="modal__icon">
+              <img src="../img/header/game-development1.png" alt="Game" class="modal__icon">
+              <img src="../img/header/tic-tac-toe1.png" alt="TicTacToe" class="modal__icon">
             </div>
         </div>
-        <div class="modal2" style="display: none;">
-           <div class="modal-content">
-                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
-                    <path d="M1 1L8.5 8.5M16 16L8.5 8.5M8.5 8.5L16 1L1 16" stroke="black"/>
-                  </svg>
-              <h2>Дякую за підписку</h2>
-              <div class="modal__icons">
-                <img src="../img/header/sword1.png" alt="Sword Icon" class="modal__icon">
-                <img src="../img/header/puzzle1.png" alt="Puzzle Icon" class="modal__icon2">
-                <img src="../img/header/game-development1.png" alt="Game Controller Icon" class="modal__icon3">
-                <img src="../img/header/tic-tac-toe1.png" alt="Tic-Tac-Toe Icon" class="modal__icon4">
-            </div>
-            </div>
-          </div>
+      </div>
+    </div>
+    
 
          
           <div class="header__nav">
@@ -90,14 +79,16 @@
               
               
             <div class="header__theme">
-                <button class="header__theme-toggle">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOlSURBVHgBtVY5SGNRFL35iTtqVFzA7dtYKDhRUAYUEhVEsUhshGn0RyysJGDhWCUBcSk0GTstNIW2mmlkBIUEBC1UMmJhIyaFuOASERH3uffhDz8/cRj0zYHH/+++7XDfu/dcDcSBzWbTr6+vS1dXV8b29nZDdna2SPa7uzs4OTmBo6MjKC8vB71eD59EEFsA28+RkRFPvAkatSEvL89SV1c3NzAwoDeZTBB312AQfD4fLC4uQnFxMQ+iMlmnmmgUwcrKStfw8LDNYrHErD47OyPyoCbqcDggLS2NF0mCA0k65Y4g/4iiaJ+fn49Lzul0Qn5+fowd14DH44GEhAQIh8PAi+DQ0JBL7mjfvpLL5XK3trayjt/vh9LSUtBoNPD6+gqNjY2QlJQEBQUFUFNTw+aQnd5jeno60LqZmZkYD38UeO7XhoaG3xgH+8yD/f39dkmSIhOIkFarhYWFBUby4OAA1tbWoLe3l40LgsAakZJBXt7d3QVewHPnKFh1+C9ZrVZROVhdXQ2Dg4OMHDUl6Drv7++ZR+12e8RuMBggNTUVOEKfkpIiCS0tLWbaXInt7W3Izc2Fzs7OmFWPj4+M3PPzc8xYW1sbCyZewGdkEjBNiCoja01NTX9bCBsbG7C3txdlp7RE75IX8Bl9IYIR9xEpenvqa42HsbExmJ6eZnOXl5eZjaL6+voaOEIUlD3KZeSdfwFFb2JiIgsW+v4v6C4vL4P4FalDykAgknKKeQ89PT2QkZEBExMTEVsgEIibLz8KPD8gYM4LqAfomkjK3gORb25uhtra2ih7KBTiqShEMCTc3Nz41WQwsgE9C1NTU+wKlaBk/PDwwOxqDy8tLXFL1m/wCl1dXZ7Z2dmwgjVsbW1BR0cHlJSUwNPTE6teNjc32djp6Sl7c/SPBUVkJ9Lli4sL4AXcP4iB6BFQ7MMrKytWr9fLBuj6dnZ2GAGz2cxshYWFLIWQWhBeXl7YOCpQZEPS8KqqKuAF3J8dxrT49vZ2H2Uqq76+/ivpLTUZRJhSD0nd6upqVAqS3xtKEhQVFUFycjJwgnN0dNQdIUg4Pz//hZ7UZGVlmdTKYjQaobu7G3Asyk4VTF9fH+h0OsjMzAQewNv5geS+y32t6kAfXnUIK2kD6qCeEq8MZXQSsfHxcZicnISysjJWD3JAGK/1G747t9L4rmTk5ORIWNabKyoqRFltqOQ/Pj6Gw8NDwKqbafInEcQWQGJ+3Nvjdrtjiso/xOZ5JGpSbUMAAAAASUVORK5CYII=" alt="white Theme" class="header__theme-white">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALpSURBVHgBtZY7TGJBFIZ/LiSiMUosjDaGqFErl8rGx1LZGW03sYDWisTGRwGbmFgCnVZeE+1da42gpYXETgsDhfEReUPCmz3nyr25CKwQZr9kcs+cmWH+HObMHAOa4HK5LL29vQ6DwfCTujZqVnRBLpfD7e0tIpEI3t7ekM/nFT/tEaY9QvT9E41G5WZrDV8d29vba5IkHVWrVQu6hIXd3Nwo4togTO03NVnvNOo7u7u7Xvr4qJnRJYlEAsfHx3h6etJ8fX19KBaLrZZwQNZqdlB1Sqqxs7Pjpqi5IAAWd3p6imQy+bmzxQKv14vn52eYTKbvlnv6+/u9asdUE+fgAQhCL85ms+Hq6koReXJyglKp9O36TCbjGh0dDb68vJypEXRDEPf395o42kQTx2xsbLT9O7FY7IiTVapFzwpBcFLobVUck06n0S6U6Zbz83MHR3AVgnh9fdWiNzk5iYmJCXQDJZhdonvICkGo4pilpaWGcbvdjg75IVHm2iCI9/d3zV5fX28Yv7y8RIdYJfwnCoVCg48eAHg8HnQCCwxDEIODg5p9cXHRdI7b7f6nyEqlou+GWGAIghgeHtbsg4ODlvNYJN+H19fX2Nvbw+HhIbLZLOi44e7uTj81YiJnkBJlDQIYGRlRRPJZpMtWeebGx8ebzjUajVhcXFSans3NTX33TOrp6ZFJYAKCmJub02y+ZuLxeNtr/X4/AoGA2g1TkyU6Dwn6350QxOzsLMbGxrT+1NRUXcHQClmWuczTu7iy+SwW9vf3z+jjhyBWVla0hPn4+FAiydFpBkdseXkZTqfzqziZjbp6kJ49DwS9y3xpc3Ggv7yZgYEBDA0NKQnBL49avOrG/alUSgtlXT1Ib2dgfn4+QqaNzmVXBavZbMb09LQigKtoFe5zOcbCy+Wy5qeqOkHCf1GR4NP/jqHVBltbWw66WFf5Kez2tWExDw8PeHx8rCv5iTDVfqGZmZngwsKC7PP5GpL1L7/8OfvjIQwmAAAAAElFTkSuQmCC" class="header__theme-black" alt="">
-                </button>
+              <button id="header__theme-toggle-light" class="header__theme-toggle active">
+                <img src="../img/header/white_teme.png" alt="Light Theme">
+              </button>
+              <button id="theme-toggle-dark" class="header__theme-toggle">
+                <img src="../img/header/black_theme.png" alt="Dark Theme">
+              </button>
         </div>
         <h2 class="header__hello">
             Вітаємо,
-            <span class="header_hello-value">User</span>
+            <span class="header__hello-value">User</span>
         </h2>
         </div>
         
@@ -193,23 +184,20 @@
 </section>
   <section class="time">
     <div class="container">
-    <h2 class="time__title">Калькулятор часу</h2>
-    <div class="time__input-container">
-        <div class="time__fix">
-        <input type="number" class="time__number-input" placeholder="Введіть число">
-        <button class="time__butotn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <circle cx="6.52174" cy="6.52174" r="5.52174" stroke="white" stroke-width="2"/>
-                <path d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z" fill="white"/>
-              </svg>
-        </button>
-    </div>
-        <p class="time__points">..............................</p>
-
-        <h2 class="time__result" id="result">3 дн. 15:45:01</h2>
-
-    
-    </div>
+        <h2 class="time__title">Калькулятор часу</h2>
+            <div class="time__input-container">
+                <div class="time__fix">
+                    <input type="number" class="time__number-input" placeholder="Введіть число">
+                    <button class="time__butotn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <circle cx="6.52174" cy="6.52174" r="5.52174" stroke="white" stroke-width="2"/>
+                            <path d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z" fill="white"/>
+                          </svg>
+                    </button>
+                </div>
+                <p class="time__points">..............................</p>
+                <h2 class="time__result">3 дн. 15:45:01</h2>
+            </div>
     </div>
 </section>
   <section class="dino">
