@@ -1,48 +1,77 @@
-.biggest__title {
-  color: #000;
-  font-family: "Montserrat Alternates";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-align: center;
+.biggest {
+  padding-bottom: 72px;
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
+
+  &__title {
+    color: #000;
+    font-family: "Montserrat Alternates";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+  
+  &__input {
+    display: inline-flex;
+    padding: 10px 20px;
+    align-items: flex-start;
+    gap: 10px;display: inline-flex;
+    padding: 10px 20px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 20px;
+background: #D7D7D7;
+box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+border: none;
+color: #7E7E7E;
+font-family: "Montserrat Alternates";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+  
+  &__button {
+    display: inline-flex;
+    padding: 10px 20px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 20px;
+    background: #D7D7D7;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    color: #7E7E7E;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+  }
+  
+  &__text {
+    color: #000;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  &__input:focus { 
+    outline: none;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  
 }
 
-.input__clein {
-  width: 100%;
-  max-width: 300px;
-  padding: 10px;
-  font-size: 16px;
-  border: 2px solid #ccc;
-  border-radius: 25px;
-  margin-bottom: 15px;
-  outline: none;
-}
-
-.biggest__button {
-  display: inline-flex;
-  padding: 10px 20px;
-  align-items: flex-start;
-  gap: 10px;
-  border-radius: 20px;
-  background: #D7D7D7;
-  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
-  color: #7E7E7E;
-  font-family: "Montserrat Alternates";
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  border: none;
-}
-
-.biggest__text {
-  color: #000;
-  font-family: "Montserrat Alternates";
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-align: center;
-  margin-top: 20px;
-}

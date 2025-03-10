@@ -68,3 +68,9 @@ leftButton.addEventListener("click", () => {
 });
 
 updateCredits();
+
+document.addEventListener("dragstart", function (event) {
+    if (event.target.classList.contains("credits__image")) {
+        event.preventDefault();
+    }
+});

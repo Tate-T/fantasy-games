@@ -74,6 +74,11 @@ border: none;
 margin-right: 36px;
     }
 
+    &__input:focus { 
+        outline: none;
+        box-shadow: none;
+      }
+
     &__input::placeholder {
         color: #7E7E7E;
 font-family: "Montserrat Alternates";
