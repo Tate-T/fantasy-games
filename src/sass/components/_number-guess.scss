@@ -86,8 +86,12 @@ margin-top: 36px;
     border-radius: 0px 20px 20px 0px;
     background: #000;
 }
-&__guess{
+&__box{
+    display: flex;
+}
 
+&__guess{
+margin-left: 207px;
 text-align: right;
 font-family: "Montserrat Alternates";
 font-size: 12px;
