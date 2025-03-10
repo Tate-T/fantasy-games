@@ -665,7 +665,9 @@ body {
   justify-content: center;
   text-align: center;
 }
-.dino .title {
+
+.dino__title {
+
   color: #000;
   font-family: "Montserrat Alternates";
   font-size: 16px;
@@ -674,6 +676,7 @@ body {
   line-height: normal;
   margin-bottom: 36px;
 }
+
 .dino .games {
   border-radius: 10px;
   width: 720px;
@@ -727,6 +730,13 @@ body {
   100% {
     top: 150px;
   }
+
+.dino__game {
+  width: 720px;
+  height: 241px;
+  flex-shrink: 0;
+  background-color: gray;
+
 }
 
 .football__play {
@@ -1079,4 +1089,4 @@ body {
   bottom: 70px;
   left: auto;
   top: auto;
-}/*# sourceMappingURL=main.css.map */
+}
