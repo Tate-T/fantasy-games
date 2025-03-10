@@ -14,7 +14,7 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <script type="module" crossorigin src="/fantasy-games/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/fantasy-games/assets/index-fe6d3047.css">
+  <link rel="stylesheet" href="/fantasy-games/assets/index-c2d848c1.css">
 </head>
 
 
@@ -103,6 +103,7 @@
         <form class="years__form" action="">
             <div class="years__conteiner">
                 <div class="years__fix">
+                    <div class="years__box">
                     <input placeholder="Введіть рік народження" class="years__input" type="text" id="yearInput">
                     <button class="years__button" type="submit">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -113,7 +114,8 @@
                 </div>
             </div>
         </form>
-        <p id="result"></p>
+        <p class="years__resultat" id="resultat"></p>
+    </div>
     </div>
 </section>
 
@@ -129,6 +131,7 @@
             <form class="number__form" action="">
                 <div class="number__conteinerr">
                     <div class="number__fixx">
+                      <div class="number__box">
                         <input placeholder="Введіть число" class="number__input" type="text" id="numberInput"/>
                         <button class="number__button" type="submit">
                             <svg class="number__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -140,6 +143,7 @@
                 </div>
             </form>
             <p class="number__guess" id="result"></p>
+          </div>
         </div>
     </section>
 </body>
