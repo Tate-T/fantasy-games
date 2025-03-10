@@ -665,7 +665,9 @@ body {
   justify-content: center;
   text-align: center;
 }
+
 .dino__title {
+
   color: #000;
   font-family: "Montserrat Alternates";
   font-size: 16px;
@@ -674,11 +676,67 @@ body {
   line-height: normal;
   margin-bottom: 36px;
 }
+
+.dino .games {
+  border-radius: 10px;
+  width: 720px;
+  height: 241px;
+  flex-shrink: 0;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+.dino .dinos {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../img/rock-paper-dino/dino.png);
+  background-size: 50px 50px;
+  position: relative;
+  top: 150px;
+}
+.dino .cactus {
+  width: 20px;
+  height: 40px;
+  background-image: url(../../img/rock-paper-dino/cactus.png);
+  background-size: 20px 40px;
+  position: relative;
+  top: 110px;
+  left: 580px;
+  animation: cactusMov 3s infinite linear;
+}
+@keyframes cactusMov {
+  0% {
+    left: 580px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+.dino .jump {
+  animation: jump 0.2s linear;
+}
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 50px;
+  }
+  50% {
+    top: 80px;
+  }
+  80% {
+    top: 110px;
+  }
+  100% {
+    top: 150px;
+  }
+
 .dino__game {
   width: 720px;
   height: 241px;
   flex-shrink: 0;
   background-color: gray;
+
 }
 
 .football__play {
@@ -1031,4 +1089,4 @@ body {
   bottom: 70px;
   left: auto;
   top: auto;
-}/*# sourceMappingURL=main.css.map */
+}
