@@ -1,4 +1,4 @@
-document.querySelector('.years__form').addEventListener('submit', function(event) {
+document.querySelector('.years__form').addEventListener('submit', (event) => {
     event.preventDefault();
     const year = parseInt(document.querySelector('.years__input').value);
     const resultElement = document.getElementById('resultat');
