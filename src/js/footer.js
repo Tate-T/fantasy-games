@@ -11,6 +11,7 @@ openButton.addEventListener("click", () => {
     if (input.value.includes("@")) {
         modal.classList.remove("is-hidden");
         backdrop.classList.add("active");
+        input.value = "";
     } else {
         function modalOpen() {
             falseModal.classList.remove("is-hidden");
