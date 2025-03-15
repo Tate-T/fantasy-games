@@ -46,21 +46,16 @@ saveBtn.addEventListener("click", function() {
 
 
 const slider = document.getElementById("slider");
-const textElement = document.querySelectorAll("h2");
+const pageDark = document.querySelector("body");
 
 slider.addEventListener("change", function () {
   if (this.checked) {
-     lightTheme();
+   
+    pageDark.setAttribute("id", "dark-theme")
+    // pageDark.classList.add("dark-theme");
   } else {
-    document.body.style.backgroundColor = "white";
-    textElement.style.color = "white";
+    pageDark.removeAttribute("id")
+    // pageDark.classList.remove("dark-theme");
   }
 })
 
-function lightTheme () {
-  
-  textElement.style.color = "white";
-  document.body.style.backgroundColor = "black";
-}
-
-console.log(textElement)
