@@ -6,7 +6,7 @@
     text-align: center;
 
     .title {
-        color: #000;
+        color: inherit;
         font-family: "Montserrat Alternates";
         font-size: 16px;
         font-style: normal;
@@ -29,10 +29,11 @@
    .dinos{
         width: 50px;
         height: 50px;
-        background-image: url(../../img/rock-paper-dino/dino.png);
+        background-image: url(../../img/rock-paper-dino/Chromedinoday.webp);
         background-size: 50px 50px;
         position: relative;
-        top: 150px;
+        top: 190px;
+left: 20px;
     }
    .cactus{
         width: 20px;
@@ -40,11 +41,17 @@
         background-image: url(../../img/rock-paper-dino/cactus.png);
         background-size: 20px 40px;
         position: relative;
+
+        top: 150px;
+        left: 580px;
+        animation: cactusMov 1.5s infinite linear;
+
         top: 109px;
         left: 580px;
         animation: cactusMov 2s infinite linear;
 
    
+
     }
     @keyframes cactusMov {
         0%{
@@ -63,13 +70,25 @@
         0%{
             top: 150px;
         }
+        10%{
+            top: 120px;
+        }
+        20%{
+            top: 110px;
+        }
         30%{
             top: 130px;
+        }
+        40%{
+            top: 60px;
         }
         50%{
             top: 80px;
         }
         80%{
+            top: 130px;
+        }
+        90%{
             top: 130px;
         }
         100%{
@@ -78,7 +97,49 @@
     }
 
     .text{
+
+        color: inherit;
+font-family: "Montserrat Alternates";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    }
+
+
+    .start-plate{
+        width: 750px;
+        height: 241px;
+        background-color: gray;
+        position: relative;
+        bottom: 230px;
+        right: 20px;
+    }
+    .play-button{
+        width: 182px;
+        height: 35px;
+        border-radius: 20px;
+background: #000;
+position: relative;
+top: 90px;
+    }
+
+    .play{
+        color: white;
+        font-family: "Montserrat Alternates";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    }
+
+    .loseMessages{
+        margin-top: 20px;
+        color:inherit;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
         color: #000;
+
 font-family: "Montserrat Alternates";
 font-size: 16px;
 font-style: normal;
