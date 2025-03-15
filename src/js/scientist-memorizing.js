@@ -115,16 +115,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     buttons[1].addEventListener("click", () => {
-        scientists.sort((a, b) => {
-            if (a.name > b.name) {
-                return 1;
-            } else {
-                return -1;
+        const scientistsItems = scientistsList.children;
+        for (let i = 0; i < scientistsItems.length - 1; i++) {
+            for (let j = i + 1; j < scientistsItems.length; j++) {
+                const nameA = scientistsItems[i].textContent.toLowerCase();
+                const nameB = scientistsItems[j].textContent.toLowerCase();
+                if (nameA > nameB) {
+                    scientistsList.insertBefore(scientistsItems[j], scientistsItems[i]);
+                }
             }
-        });
-        scientistsList.innerHTML = "";
-        for (let i = 0; i < scientists.length; i++) {
-            scientistsList.innerHTML += `<p class="sceinists__item">${scientists[i].name} ${scientists[i].surname} ${scientists[i].born}-${scientists[i].dead}</p>`;
         }
     });
 
