@@ -88,20 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const scientistsList = document.querySelector(".sceinists__list");
     const buttons = document.querySelectorAll(".sceinists__button");
     const scientistsItems = document.querySelectorAll(".sceinists__item");
-    const resetSceinists = () => {
-        scientistsItems[0].textContent = "Albert Einstein 1879-1955";
-        scientistsItems[1].textContent = "Isaac Newton 1643-1727";
-        scientistsItems[2].textContent = "Galileo Galilei 1564-1642";
-        scientistsItems[3].textContent = "Marie Curie 1867-1934";
-        scientistsItems[4].textContent = "Johannes Kepler 1571-1630";
-        scientistsItems[5].textContent = "Nicolaus Copernicus 1473-1543";
-        scientistsItems[6].textContent = "Max Planck 1858-1947";
-        scientistsItems[7].textContent = "Katherine Blodgett 1898-1979";
-        scientistsItems[8].textContent = "Ada Lovelace 1815-1852";
-        scientistsItems[9].textContent = "Sarah E. Goode 1855-1905";
-        scientistsItems[10].textContent = "Lise Meitner 1878-1968";
-        scientistsItems[11].textContent = "Hanna Hammarström 1829-1909";
-    }
+    const originalOrder = [...scientistsList.children].map(item => item.textContent);
 
     buttons[0].addEventListener("click", () => {
         for (let i = 0; i < 12; i++) {
@@ -219,6 +206,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
     buttons[9].addEventListener("click", () => {
-        resetSceinists()
+        const scientistsItems = scientistsList.children;
+        for (let i = 0; i < originalOrder.length; i++) {
+            scientistsItems[i].textContent = originalOrder[i];
+        }
     })
 });
