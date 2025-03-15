@@ -44,3 +44,23 @@ saveBtn.addEventListener("click", function() {
 });
 
 
+
+const slider = document.getElementById("slider");
+const textElement = document.querySelectorAll("h2");
+
+slider.addEventListener("change", function () {
+  if (this.checked) {
+     lightTheme();
+  } else {
+    document.body.style.backgroundColor = "white";
+    textElement.style.color = "white";
+  }
+})
+
+function lightTheme () {
+  
+  textElement.style.color = "white";
+  document.body.style.backgroundColor = "black";
+}
+
+console.log(textElement)
