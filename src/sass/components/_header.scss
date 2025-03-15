@@ -1,9 +1,9 @@
-body.light-theme {
+body {
   background-color: #fff;
   color: #000;
 }
 
-body.dark-theme {
+body#dark-theme {
   background-color: #333;
   color: #fff;
 }
@@ -11,7 +11,6 @@ body.dark-theme {
 .header {
   width: 100%;
   height: 80px;
-  outline: solid red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,7 +52,7 @@ body.dark-theme {
   }
 
   &__menu-link {
-    color: $back-icon-color;
+    color: inherit;
     font-family: $base-font;
     font-size: 12px;
     font-style: normal;
@@ -62,7 +61,7 @@ body.dark-theme {
   }
 
   &__hello {
-    color: $back-icon-color;
+    color: inherit;
     text-align: right;
     font-family: $base-font;
     font-size: 12px;
@@ -288,7 +287,7 @@ input:checked + .slider:before {
       margin-top: 10px;
       padding: 10px 20px;
       background: black;
-      color: white;
+      color: inherit;
       border: none;
       border-radius: 8px;
       cursor: pointer;
