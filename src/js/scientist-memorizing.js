@@ -206,9 +206,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
     buttons[9].addEventListener("click", () => {
-        const scientistsItems = scientistsList.children;
-        for (let i = 0; i < originalOrder.length; i++) {
-            scientistsItems[i].textContent = originalOrder[i];
-        }
-    })
+        scientistsList.innerHTML = ''; 
+        originalOrder.forEach(item => scientistsList.appendChild(item));
+    });
+    
 });
