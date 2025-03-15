@@ -4,7 +4,6 @@ const loseMsg = document.querySelector(".loseMessages");
 const playButtonElement = document.querySelector(".play-button");
 const startPlateElement = document.querySelector(".start-plate");
 const playElement = document.querySelector(".play");
-
 let gameStarted = false; 
 
 playButtonElement.addEventListener("click", (event) => {
@@ -60,37 +59,7 @@ function jump() {
 function resetGame() {
     setTimeout(() => {
         startPlateElement.style.display = "block"; 
-        loseMsg.style.display = "block";
+        loseMsg.style.display = "block"; 
         gameStarted = false; 
     }, 100);
 }
-
-    event.preventDefault;
-})
-
-
-
-function jump() {
-    if (dino.classList != "jump") {
-      dino.classList.add("jump");
-  
-      setTimeout(function () {
-        dino.classList.remove("jump");
-      }, 300);
-    }
-  }
-
-
-let isAlive = setInterval ( function() {
-    let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
-    let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
-
-    if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
-    
-    }
-}, 10)
-
-document.addEventListener("keydown", function (event) {
-    jump();
-  });
-
