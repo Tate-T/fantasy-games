@@ -8,6 +8,7 @@ const backdrop = document.querySelector("[data-backdrop]");
 const input = document.querySelector(".footer__input");
 
 openButton.addEventListener("click", () => {
+    input.value = "";
     if (input.value.includes("@")) {
         modal.classList.remove("is-hidden");
         backdrop.classList.add("active");
