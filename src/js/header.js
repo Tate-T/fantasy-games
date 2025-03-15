@@ -44,3 +44,18 @@ saveBtn.addEventListener("click", function() {
 });
 
 
+
+const slider = document.getElementById("slider");
+const pageDark = document.querySelector("body");
+
+slider.addEventListener("change", function () {
+  if (this.checked) {
+   
+    pageDark.setAttribute("id", "dark-theme")
+    // pageDark.classList.add("dark-theme");
+  } else {
+    pageDark.removeAttribute("id")
+    // pageDark.classList.remove("dark-theme");
+  }
+})
+

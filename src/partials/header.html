@@ -58,12 +58,10 @@
               
               
             <div class="header__theme">
-              <button id="header__theme-toggle-light" class="header__theme-toggle active">
-                <img src="./img/header/white_teme.png" alt="Light Theme">
-              </button>
-              <button id="theme-toggle-dark" class="header__theme-toggle">
-                <img src="./img/header/black_theme.png" alt="Dark Theme">
-              </button>
+              <label id="switch" class="switch">
+                <input type="checkbox" onchange="toggleTheme()" id="slider">
+                <span class="slider round"></span>
+            </label>
         </div>
         <h2 class="header__hello">
             Вітаємо,

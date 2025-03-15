@@ -4,6 +4,7 @@ import "./js/number-guess";
 import "./js/rock-paper-scissors";
 import "./js/calculator";
 import "./js/time-calculator";
+import "./js/catch-the-square";
 import "./js/dino-copy";
 import "./js/football-play";
 import "./js/biggest-number";
