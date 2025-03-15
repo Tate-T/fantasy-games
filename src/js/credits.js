@@ -9,37 +9,37 @@ const team = [
     {
         name: "Ім’я студента",
         role: "Інформація про роботу, яку він/вона виконав/ла",
-        image: "img/credits/square.png",
+        image: "../img/credits/square.png",
     },
     {
         name: "Тарас",
         role: "Тімлід",
-        image: "img/credits/taras.png",
+        image: "../img/credits/taras.png",
     },
     {
         name: "Діма",
         role: "Скрам-майстер",
-        image: "img/credits/dima.png",
+        image: "../img/credits/dima.png",
     },
     {
         name: "Маркіян",
         role: "Розробник, (Я зробив цю секцію)",
-        image: "img/credits/markiian.png",
+        image: "../img/credits/markiian.png",
     },
     {
         name: "Денис",
         role: "Розробник",
-        image: "img/credits/denys.png",
+        image: "../img/credits/denys.png",
     },
     {
         name: "Настя",
         role: "Розробник",
-        image: "img/credits/nastya.png",
+        image: "../img/credits/nastya.png",
     },
     {
         name: "Діна",
         role: "Розробник",
-        image: "img/credits/dina.png",
+        image: "../img/credits/dina.png",
     },
 ];
 

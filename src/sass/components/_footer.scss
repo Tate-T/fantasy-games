@@ -29,7 +29,7 @@
     }
 
     &__list-text {
-        color: #000;
+        color: inherit;
         font-family: "Montserrat Alternates";
         font-size: 12px;
         font-style: normal;
@@ -55,7 +55,7 @@ border: none;
     }
 
     &__text {
-        color: #000;
+        color: inherit;
 font-family: "Montserrat Alternates";
 font-size: 6px;
 font-style: normal;
@@ -93,6 +93,7 @@ line-height: normal;
 height: 70px;
 flex-shrink: 0;
 margin-right: auto;
+fill: currentColor;
     }
 }
 
@@ -153,7 +154,7 @@ right: 30px;
 .footer-modal__headline {
     color: #000;
 text-align: center;
-font-family: Inter;
+font-family: "Inter";
 font-size: 20px;
 font-style: normal;
 font-weight: 400;
