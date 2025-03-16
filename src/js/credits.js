@@ -9,37 +9,37 @@ const team = [
     {
         name: "Ім’я студента",
         role: "Інформація про роботу, яку він/вона виконав/ла",
-        image: "../img/credits/square.png",
+        image: "https://raw.githubusercontent.com/Tate-T/fantasy-games/main/img/credits/square.png",
     },
     {
         name: "Тарас",
         role: "Тімлід",
-        image: "../img/credits/taras.png",
+        image: "https://raw.githubusercontent.com/Tate-T/fantasy-games/main/img/credits/taras.png",
     },
     {
         name: "Діма",
         role: "Скрам-майстер",
-        image: "../img/credits/dima.png",
+        image: "https://raw.githubusercontent.com/Tate-T/fantasy-games/main/img/credits/dima.png",
     },
     {
         name: "Маркіян",
         role: "Розробник, (Я зробив цю секцію)",
-        image: "../img/credits/markiian.png",
+        image: "https://raw.githubusercontent.com/Tate-T/fantasy-games/main/img/credits/markiian.png",
     },
     {
         name: "Денис",
         role: "Розробник",
-        image: "../img/credits/denys.png",
+        image: "https://raw.githubusercontent.com/Tate-T/fantasy-games/main/img/credits/denys.png",
     },
     {
         name: "Настя",
         role: "Розробник",
-        image: "../img/credits/nastya.png",
+        image: "https://raw.githubusercontent.com/Tate-T/fantasy-games/main/img/credits/nastya.png",
     },
     {
         name: "Діна",
         role: "Розробник",
-        image: "../img/credits/dina.png",
+        image: "https://raw.githubusercontent.com/Tate-T/fantasy-games/main/img/credits/dina.png",
     },
 ];
 
