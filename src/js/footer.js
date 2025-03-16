@@ -30,3 +30,10 @@ falseCloseButton.addEventListener("click", () => {
     falseModal.classList.add("is-hidden");
     falseBackdrop.classList.remove("active");
 });
+
+// For looking
+document.addEventListener("dragstart", function (event) {
+    if (event.target.classList.contains("footer-modal-img")) {
+        event.preventDefault();
+    }
+});
