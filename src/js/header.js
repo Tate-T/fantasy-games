@@ -25,24 +25,26 @@ window.onload = () => {
     });
 };
 
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.querySelector(".modal");
+  const input = document.querySelector("#modal__name-input");
+  const saveButton = document.querySelector(".modal__save-button");
+  const helloValue = document.querySelector(".header__hello-value");
 
-const userValueSpan = document.querySelector(".header__hello-value");
-const modalInput = document.getElementById("modal__name-input");
-const saveBtn = document.querySelector(".modal__save-button");
-const modal = document.querySelector(".modal[data-open='true']");
+  // Відкрити модалку при вході на сайт
+  modal.setAttribute("data-open", "true");
+  modal.classList.add("modal--visible");
 
-// Слухаємо подію click для кнопки "Зберегти"
-saveBtn.addEventListener("click", function() {
-  // Витягуємо значення з інпуту
-  const inputValue = modalInput.value;
-
-  // Вставляємо значення в span
-  userValueSpan.textContent = inputValue;
-
-  // Закриваємо модальне вікно
-  modal.style.display = "none";
+  // Обробник кліку по кнопці "Зберегти"
+  saveButton.addEventListener("click", function () {
+      const name = input.value.trim();
+      if (name) {
+          helloValue.textContent = name; // Передаємо значення в span.header__hello-value
+          modal.classList.remove("modal--visible"); // Закриваємо модальне вікно
+          modal.setAttribute("data-open", "false");
+      }
+  });
 });
-
 
 
 const slider = document.getElementById("slider");
