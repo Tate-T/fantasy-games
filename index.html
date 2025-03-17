@@ -14,86 +14,88 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <script type="module" crossorigin src="/fantasy-games/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/fantasy-games/assets/index-e0602661.css">
+  <link rel="stylesheet" href="/fantasy-games/assets/index-ad9e0375.css">
 </head>
 
 
 <body>
   <header class="header">
-    <div class="container">
-      <div class="modal" data-open="true">
-        <div class="modal__box">
+  <div class="container">
+    <div class="header__modal" data-open="true">
+      <div class="modal__box">
         <div class="modal__content">
-            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
-                <path d="M1 1L8.5 8.5M16 16L8.5 8.5M8.5 8.5L16 1L1 16" stroke="black"/>
-            </svg>
-            <div class="modal__welcome-message">
-                <h2 class="modal__text">Привіт!
-                    Ви потрапили на сайт інтерактивних ігор та завдань.
-                    Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
-                    Бажаємо Вам гарно провести час!
-                </h2>
-            </div>
-            <div class="modal__input-section">
-                <label for="modal__name-input">Введіть своє ім'я:</label>
-                <input type="text" id="modal__name-input" placeholder="Ваше ім'я...">
-                <button type="button" class="modal__save-button">Зберегти</button>
-            </div>
-            <div class="modal__icons">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFhSURBVHgB7ZY9TgMxFIQHErJADRIH4CpUdIgOkUgcgR6JBgSXoEog5EqIIGhpoEKQLOKN/Kw4q13Yn+cUwEiTlR3rfR47dhb4a1qCvVjzXPye6W9p/xsbbdgrFb+Kp8FE1sVr2j7hxzJs9Sl+FG+IN8Vb4mNxRyeU+oGWYA/dVgCX9kB8JT4SvyCCCH1QGPTZhVvurrafxacwVBkorMGEjktA+fwQn8FAZZPyea/j/6GFWhXvBsWq7OkYNaGJeAJ3JvdRLWltaFsLjuAuARZ5wuyKjQKlEi16rTAWZ/Ie3PXXiwH1IoBn7zYDv4wJ9fLJs/ALnVg0KBMPkJ+cy70Cw3MaQodw/6dFy34XE+qVByd0D7O9NodC233M7/khXPIdNNBP0Bv93o8bad9E+2qLSfoF0KHC/C+5o+OnQV8t8RUoTPQd1KuFhknzIAnml7dRqqrwwaKgIZxJ00VCQ/jv1BfJvoghyZamxwAAAABJRU5ErkJggg==" alt="Sword" class="modal__icon">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM1SURBVHgBzVZfSFNRGD+7+9P+6KZ7cFOZgk5MccNMNvRFCx9CWXtSKiKICJfPEpbZ1oPQXnqTgiiILGovMQODXqIQnyIUQdEgg8QYC3Qy3XRrt98x71h3u+m9bugPLvfe757z/b7vnu/8vkNInsCyrLyrq6uhqKjop1wuTxgMhh8jIyM2aieFhMfjcchkMnZgYMBC38fGxqw0HgRzihQYqUAgYM40jI6OmhiGiSFrGSkgWDF2BZGAiYkJrdfrvaBQKHadRqPR2MLCAjs5Oanv7u7e4MZNT09r2tvbidPpvJxKpZScPRaLbUoiBulQKBQ6bzabv9B3jUZDmpubX+j1+n+yW1xcPNHS0jKeSCTOcrbt7e2t+fn5G0QKQOK12+0+Ih0sQ44IgsSZlViIqmSESMvKyl6RvxXJ1tbWjvOFYGdnR9/T03PN7/c37BcYvu/yuFwud29v7zmhQdTJZklJyTPOVl5e/hgVHOEcOByOmyiocH19/VO8RnBtcd9y+auqquqjjyaT6X1NTc1b7O3fWQMHBwedcLrCj1in0610dnae5JxxWdK70Wh8gkA//Sdzlj8vC42Njd6mpiYv345K9tlstrtEGDmFAnP6keVzvl3R0dFxUalUqjnD+vo6WVpauoTHe2mPiLKiosKFzN5Ae69ydvwyxufzvWxra4tDp3PxEq1WW4z5a3w7HZ3CWj1CR0mTI5DQ7OzsLR7xg9LSUkPmXARpRxG+m5mZiaIO+lZXV0/TRpFJEAwGi91u9wZdLv43IY0VBALwoGA+Wq3W18hojToUWjtKqFarh+mjxWIZbm1tvU2kCkh1dbVJpVKF8Jc2sVTXocNZ2XCAPQVt9k9NTelRoEaMVaWDIiJxJJJJf104HJbUXDIhygFVL/ziX8lkUodOdIccArQg2L37fqRMXV1dMBKJfEc7XJmbm7tPJIKu+65PEXPSCkTyANHE+YCo4sK6fq2srBzO7FSHyf7AWVASul+xjz9AOq/gDP0ZnaqfSICojCkpBEABmXy4vLx8Bh3pWzweNxMJEL0fQU57aYBe6GI+IhHH78x1EECrk0Qq0FITZO9sJfaia46DwxCRgD+2aVuQjvj9xwAAAABJRU5ErkJggg==" alt="Puzzle" class="modal__icon">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAInSURBVHgBtVbLSsQwFD2tFZyVq5mF/oE7QcS1P+BPuBKUkdGNiONW3Qp+hQtRQRRXijCIG5cKKvjClQ9Q8TX1XprQTJq0TWfmwKHtTe49yc1NGiDCIzHsEm9hwR1x0mD30Blw7GdTvFB51gR1mwukv6SqYRTW0akZGzUC4g/s4p1CE3lG0wUkNHxkw9OeJpvzsmQJc8AyWgsFSG6ZMgqIpxVXRbRX0Bq4StxCNPCypU+mRugo6gl7j/KdJZ5bOC3QGPEJ6QPN1LCtcdp6cYonUtqbyAlbqk2z7hE2PfW2ZUnTSC0uVZyzw7OtOoo6C+uBbX2zRFFEWB+EfHqWNptPoZMLmjMHW0RURPIAWUO8vdTYq6Jd9q3LfgHcwE4PxBtiifgl7LvEFzEAXwjNExvEXuKvGPARcYo4oM4kDxaIx4hTWEOc+gPiGXGZeE7cQZzROaXfqfh2Eg7Rusaqb4BkEZr69RHfdGMeYYa8ZXwgvqXo9eLDfpsJ1WB5hQPtm6FmIe0A8doR3leE1PuYbXZqP87CdlFhrupNmC8G+rsOrv57juOyjyV4K+xptgbiPa3u7xPEa+8Jv0Hp9If8MGVnHNGF0XSavRJHTXG4UGZFwCUkTx8VnwYbz+YQ0d6tG9o3EGXDhzZoNqwThxD/8mw0nXIzxGvxbvLhk+2SOI02LoaMK+KKcO5HvsKUV6WSeOdjtQFHyCOPA70Th5E9A24fIX4Lvwu2/QNCe8PzxbtIdAAAAABJRU5ErkJggg==" alt="Game" class="modal__icon">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGBSURBVHgB5Ve9TsMwEP4cEBIbMNIJxMqLMPMWMMAEr8CAEI/Au7DAhgQTLAiJoQsSC0UJgbv4TG2ahF5id2hP+hRf7fN3f3FjAMgIB4QR4TsxcsIpwUAGBaFUbvIl0JIXEmjlBf+wCZ24jTQykABHxjM20EkvuwxxhZ04IwwJj4R9tDjWJWVNdqz7vcL1vEEY4K9dDGKO6k70Z8IaYRfjBtxLRezrfnTbnjPButg1Zim98VCeq38XxSLmVH/ARnMsOuNe5q/qjGKlegu2mQpvzjVasuZiWSLsIOzqJ0y+TtXc3BwgU8uyPF16NOKnVGuXuYi71JhFm+bAcLFq3ERsGp7JiW9hD/d1WcOnUokZEF/D1oLP2jfCijgSNfK6V4IdOvfm3jHpZO8Tr4k4R/iHvoEw4iTEL7A1ZcJLjL9CazeISXxEeIWNnHFBeMAMIjb/6E12UxNnLZNtem9h4k/ZeID04ji4Z6rrhP/VoLnCaO1cw54wsZFB3oFcC74YHhKyH8G4/8J4WoQyAAAAAElFTkSuQmCC" alt="TicTacToe" class="modal__icon">
-            </div>
+          <button class="modal__close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+            <path d="M1 1L8.5 8.5M16 16L8.5 8.5M8.5 8.5L16 1L1 16" stroke="black" />
+          </svg>
+        </button>
+          <div class="modal__welcome-message">
+            <h2 class="modal__text">Привіт!
+              Ви потрапили на сайт інтерактивних ігор та завдань.
+              Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
+              Бажаємо Вам гарно провести час!
+            </h2>
+          </div>
+          <div class="modal__input-section">
+            <label for="modal__name-input">Введіть своє ім'я:</label>
+            <input type="text" id="modal__name-input" placeholder="Ваше ім'я...">
+            <button type="button" class="modal__save-button">Зберегти</button>
+          </div>
+          <div class="modal__icons">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFhSURBVHgB7ZY9TgMxFIQHErJADRIH4CpUdIgOkUgcgR6JBgSXoEog5EqIIGhpoEKQLOKN/Kw4q13Yn+cUwEiTlR3rfR47dhb4a1qCvVjzXPye6W9p/xsbbdgrFb+Kp8FE1sVr2j7hxzJs9Sl+FG+IN8Vb4mNxRyeU+oGWYA/dVgCX9kB8JT4SvyCCCH1QGPTZhVvurrafxacwVBkorMGEjktA+fwQn8FAZZPyea/j/6GFWhXvBsWq7OkYNaGJeAJ3JvdRLWltaFsLjuAuARZ5wuyKjQKlEi16rTAWZ/Ie3PXXiwH1IoBn7zYDv4wJ9fLJs/ALnVg0KBMPkJ+cy70Cw3MaQodw/6dFy34XE+qVByd0D7O9NodC233M7/khXPIdNNBP0Bv93o8bad9E+2qLSfoF0KHC/C+5o+OnQV8t8RUoTPQd1KuFhknzIAnml7dRqqrwwaKgIZxJ00VCQ/jv1BfJvoghyZamxwAAAABJRU5ErkJggg==" alt="Sword" class="modal__icon">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM1SURBVHgBzVZfSFNRGD+7+9P+6KZ7cFOZgk5MccNMNvRFCx9CWXtSKiKICJfPEpbZ1oPQXnqTgiiILGovMQODXqIQnyIUQdEgg8QYC3Qy3XRrt98x71h3u+m9bugPLvfe757z/b7vnu/8vkNInsCyrLyrq6uhqKjop1wuTxgMhh8jIyM2aieFhMfjcchkMnZgYMBC38fGxqw0HgRzihQYqUAgYM40jI6OmhiGiSFrGSkgWDF2BZGAiYkJrdfrvaBQKHadRqPR2MLCAjs5Oanv7u7e4MZNT09r2tvbidPpvJxKpZScPRaLbUoiBulQKBQ6bzabv9B3jUZDmpubX+j1+n+yW1xcPNHS0jKeSCTOcrbt7e2t+fn5G0QKQOK12+0+Ih0sQ44IgsSZlViIqmSESMvKyl6RvxXJ1tbWjvOFYGdnR9/T03PN7/c37BcYvu/yuFwud29v7zmhQdTJZklJyTPOVl5e/hgVHOEcOByOmyiocH19/VO8RnBtcd9y+auqquqjjyaT6X1NTc1b7O3fWQMHBwedcLrCj1in0610dnae5JxxWdK70Wh8gkA//Sdzlj8vC42Njd6mpiYv345K9tlstrtEGDmFAnP6keVzvl3R0dFxUalUqjnD+vo6WVpauoTHe2mPiLKiosKFzN5Ae69ydvwyxufzvWxra4tDp3PxEq1WW4z5a3w7HZ3CWj1CR0mTI5DQ7OzsLR7xg9LSUkPmXARpRxG+m5mZiaIO+lZXV0/TRpFJEAwGi91u9wZdLv43IY0VBALwoGA+Wq3W18hojToUWjtKqFarh+mjxWIZbm1tvU2kCkh1dbVJpVKF8Jc2sVTXocNZ2XCAPQVt9k9NTelRoEaMVaWDIiJxJJJJf104HJbUXDIhygFVL/ziX8lkUodOdIccArQg2L37fqRMXV1dMBKJfEc7XJmbm7tPJIKu+65PEXPSCkTyANHE+YCo4sK6fq2srBzO7FSHyf7AWVASul+xjz9AOq/gDP0ZnaqfSICojCkpBEABmXy4vLx8Bh3pWzweNxMJEL0fQU57aYBe6GI+IhHH78x1EECrk0Qq0FITZO9sJfaia46DwxCRgD+2aVuQjvj9xwAAAABJRU5ErkJggg==" alt="Puzzle" class="modal__icon">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAInSURBVHgBtVbLSsQwFD2tFZyVq5mF/oE7QcS1P+BPuBKUkdGNiONW3Qp+hQtRQRRXijCIG5cKKvjClQ9Q8TX1XprQTJq0TWfmwKHtTe49yc1NGiDCIzHsEm9hwR1x0mD30Blw7GdTvFB51gR1mwukv6SqYRTW0akZGzUC4g/s4p1CE3lG0wUkNHxkw9OeJpvzsmQJc8AyWgsFSG6ZMgqIpxVXRbRX0Bq4StxCNPCypU+mRugo6gl7j/KdJZ5bOC3QGPEJ6QPN1LCtcdp6cYonUtqbyAlbqk2z7hE2PfW2ZUnTSC0uVZyzw7OtOoo6C+uBbX2zRFFEWB+EfHqWNptPoZMLmjMHW0RURPIAWUO8vdTYq6Jd9q3LfgHcwE4PxBtiifgl7LvEFzEAXwjNExvEXuKvGPARcYo4oM4kDxaIx4hTWEOc+gPiGXGZeE7cQZzROaXfqfh2Eg7Rusaqb4BkEZr69RHfdGMeYYa8ZXwgvqXo9eLDfpsJ1WB5hQPtm6FmIe0A8doR3leE1PuYbXZqP87CdlFhrupNmC8G+rsOrv57juOyjyV4K+xptgbiPa3u7xPEa+8Jv0Hp9If8MGVnHNGF0XSavRJHTXG4UGZFwCUkTx8VnwYbz+YQ0d6tG9o3EGXDhzZoNqwThxD/8mw0nXIzxGvxbvLhk+2SOI02LoaMK+KKcO5HvsKUV6WSeOdjtQFHyCOPA70Th5E9A24fIX4Lvwu2/QNCe8PzxbtIdAAAAABJRU5ErkJggg==" alt="Game" class="modal__icon">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGBSURBVHgB5Ve9TsMwEP4cEBIbMNIJxMqLMPMWMMAEr8CAEI/Au7DAhgQTLAiJoQsSC0UJgbv4TG2ahF5id2hP+hRf7fN3f3FjAMgIB4QR4TsxcsIpwUAGBaFUbvIl0JIXEmjlBf+wCZ24jTQykABHxjM20EkvuwxxhZ04IwwJj4R9tDjWJWVNdqz7vcL1vEEY4K9dDGKO6k70Z8IaYRfjBtxLRezrfnTbnjPButg1Zim98VCeq38XxSLmVH/ARnMsOuNe5q/qjGKlegu2mQpvzjVasuZiWSLsIOzqJ0y+TtXc3BwgU8uyPF16NOKnVGuXuYi71JhFm+bAcLFq3ERsGp7JiW9hD/d1WcOnUokZEF/D1oLP2jfCijgSNfK6V4IdOvfm3jHpZO8Tr4k4R/iHvoEw4iTEL7A1ZcJLjL9CazeISXxEeIWNnHFBeMAMIjb/6E12UxNnLZNtem9h4k/ZeID04ji4Z6rrhP/VoLnCaO1cw54wsZFB3oFcC74YHhKyH8G4/8J4WoQyAAAAAElFTkSuQmCC" alt="TicTacToe" class="modal__icon">
+          </div>
         </div>
       </div>
     </div>
-    
 
-         
-          <div class="header__nav">
-             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF8AAAAoCAYAAACYayaMAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAScSURBVHgB7Zu/cuM2EMY/51KkVLqkCtLFVZwnOKS7LsoTHO4JrKtSHvME5xSuxatS+tKlszzjIqmsVLYrK11SWWVS6fAdFkOQpkSIBC2Pzd/MjgBw8Ye74BIgKSAtBxiI5hnS8quVz638gYF7R1u5tTLCQCOpZ/7Cypdw4WdWc5xO+cnK11bmGEjCoRUDZ/SRpHF9fX1zdXU1EZ03cFdFhuHK+MgnSMNfcCHnxMoFCy4vL5lXq9VqCecU5r+DM/4SA/gUaZihCDNjpvf29rLgmLbyM1xYug80ipXXHPUhMJZTK99LmhPrFRKFzFQzn2i4gb60srTGf25/F/v7+wu4mc6wsxKdvpakSto/lD4pRsq6tOl5jQd4r/Lx3EheHR8fr87Pz6dwgz+RcsZ6jfIJpYT9TGrKVZDmGMYiqkaXE8PAjZPcBMfGQVpLW1V9bOjLS1LGKN9EmV+hGCxn3gT9coDmGa5QjIVCw74Mjr+Fc6Cxkks+NH6YzqWtaUU/HM9F0Feo2yvshMZXktfof/1v4G7mm6DxVJDneC5QrNCmFX3voLC+J0fZ2IQG/mpNX/648ZltYr5BvNc0XGxcSH5m5ReUL02D9LNg1HBsgfJNn/eEMxQ36HeVOjk281sl/zfcHqaurzv6scZnTJ/i7syogyeh4E4qJLPyPsi/lfbeIA1s+wdsdoCqKeNMXa453vZKXa7p69swE2N8GieT9KsIfb+Sed+g91p+M6RxAE+YV5e/yXtGKMa/QDnGU8/vxjnew0rdQ7QnHMtI+h1v04BfHlJMZJ0T0Y/BBO2nugIMXBw/ld8ZirHTCHlwjGNVQd2xHPPHWW9TzNcoUy0z0pZfhWWItGMbw5NbbLeuNkjvAE+fN/g2ffNK0GigreG11Nl2WWnQnwN2hUGxrGWahs+bKrU1PMmkXpsdrMHjc4CCC2UGPc54Dz19g/YYPD4HRNHV8COp27TKacLgiTmgq+HJuGP9EIMn4oAUhidHKD9S6IrBE3AAl4Y8wRN0g+viLvG+Dr9niN039IHG+mVjZwy6zzAl9ZMMSEh1RXYlx92VSoaEYzLo5gCD8iPkrjwUw5MM5ZmvcHdn3BmD9g6YSr0UO8qHZHiSo7xvybDdJjLaJgbtHMBYf4ru7MrwGsUj7uos9y9DiH8jZRAHdbe6lxps54AD0T1CN3ZleBpWS1qhHDpNoEOySnkvGMQ7YCJ6Gu3ZZajJ1pQrlI3P/Limjpa8DupNgrpZUJ4h8vyoFOMAhptbtGfXMb4ufjP0hCs3g/KVzbwK6jPtHeP1qiHKv3L0ugebPhecw70Wo6KWsrMavSPRfYftoeEzSfNFTY775x8Zw2dWvoA71xdw3xn9JzpLOT6X/Dyow7D7TSAKxQuUF9IGf/+V9n0/vyMCg/VXgEa7R8jAw1vVKBSfO8YyqqTDvF+OqqBco8UTX4P6nWaG9o+Q/c7a4PFhEDEhYz8XzFH/qd9zKZ9je36U3xkeHwo9fxrpHyFPMRBiELkX6PKtppbfMwzUsWxSSGH8GQZCGBH4/VBjKH6G9nDJ9Ccil0xPCC5d/8fwz5uBgTV8AFzyXqGvuh/pAAAAAElFTkSuQmCC" class="header__logo" alt="logo">
-             <ul class="header__menu">
-                <li class="header__menu-item">
-                  <div class="header__menu-box">
-                    <a href="#" class="header__menu-link">Інтерактив</a>
-                    <button type="button" class="header__list-button">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="header__svg-list"  width="11" height="7" viewBox="0 0 11 7" >
-                        <path d="M10 1L5.5 6L1 1" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </button>
-                  </div>
-                  <ul class="header__submenu">
-                    <li class="header__submenu-item">Числовий</li>
-                    <li class="header__submenu-item">Ігровий</li>
-                    <li class="header__submenu-item">Ознайомчий</li>
-                  </ul>
-                </li>
-                <li class="header__menu-item">
-                  <a href="#" class="header__menu-link">Наша команда</a>
-                </li>
-                <li class="header__menu-item">
-                  <a href="#" class="header__menu-link">Контакти</a>
-                </li>
-              </ul>
-              
-              
-            <div class="header__theme">
-              <label id="switch" class="switch">
-                <input type="checkbox" onchange="toggleTheme()" id="slider">
-                <span class="slider round"></span>
-            </label>
-        </div>
-        <h2 class="header__hello">
-            Вітаємо,
-            <span class="header__hello-value">User</span>
-        </h2>
-        </div>
-        
-        
+
+
+    <div class="header__nav">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF8AAAAoCAYAAACYayaMAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAScSURBVHgB7Zu/cuM2EMY/51KkVLqkCtLFVZwnOKS7LsoTHO4JrKtSHvME5xSuxatS+tKlszzjIqmsVLYrK11SWWVS6fAdFkOQpkSIBC2Pzd/MjgBw8Ye74BIgKSAtBxiI5hnS8quVz638gYF7R1u5tTLCQCOpZ/7Cypdw4WdWc5xO+cnK11bmGEjCoRUDZ/SRpHF9fX1zdXU1EZ03cFdFhuHK+MgnSMNfcCHnxMoFCy4vL5lXq9VqCecU5r+DM/4SA/gUaZihCDNjpvf29rLgmLbyM1xYug80ipXXHPUhMJZTK99LmhPrFRKFzFQzn2i4gb60srTGf25/F/v7+wu4mc6wsxKdvpakSto/lD4pRsq6tOl5jQd4r/Lx3EheHR8fr87Pz6dwgz+RcsZ6jfIJpYT9TGrKVZDmGMYiqkaXE8PAjZPcBMfGQVpLW1V9bOjLS1LGKN9EmV+hGCxn3gT9coDmGa5QjIVCw74Mjr+Fc6Cxkks+NH6YzqWtaUU/HM9F0Feo2yvshMZXktfof/1v4G7mm6DxVJDneC5QrNCmFX3voLC+J0fZ2IQG/mpNX/648ZltYr5BvNc0XGxcSH5m5ReUL02D9LNg1HBsgfJNn/eEMxQ36HeVOjk281sl/zfcHqaurzv6scZnTJ/i7syogyeh4E4qJLPyPsi/lfbeIA1s+wdsdoCqKeNMXa453vZKXa7p69swE2N8GieT9KsIfb+Sed+g91p+M6RxAE+YV5e/yXtGKMa/QDnGU8/vxjnew0rdQ7QnHMtI+h1v04BfHlJMZJ0T0Y/BBO2nugIMXBw/ld8ZirHTCHlwjGNVQd2xHPPHWW9TzNcoUy0z0pZfhWWItGMbw5NbbLeuNkjvAE+fN/g2ffNK0GigreG11Nl2WWnQnwN2hUGxrGWahs+bKrU1PMmkXpsdrMHjc4CCC2UGPc54Dz19g/YYPD4HRNHV8COp27TKacLgiTmgq+HJuGP9EIMn4oAUhidHKD9S6IrBE3AAl4Y8wRN0g+viLvG+Dr9niN039IHG+mVjZwy6zzAl9ZMMSEh1RXYlx92VSoaEYzLo5gCD8iPkrjwUw5MM5ZmvcHdn3BmD9g6YSr0UO8qHZHiSo7xvybDdJjLaJgbtHMBYf4ru7MrwGsUj7uos9y9DiH8jZRAHdbe6lxps54AD0T1CN3ZleBpWS1qhHDpNoEOySnkvGMQ7YCJ6Gu3ZZajJ1pQrlI3P/Limjpa8DupNgrpZUJ4h8vyoFOMAhptbtGfXMb4ufjP0hCs3g/KVzbwK6jPtHeP1qiHKv3L0ugebPhecw70Wo6KWsrMavSPRfYftoeEzSfNFTY775x8Zw2dWvoA71xdw3xn9JzpLOT6X/Dyow7D7TSAKxQuUF9IGf/+V9n0/vyMCg/VXgEa7R8jAw1vVKBSfO8YyqqTDvF+OqqBco8UTX4P6nWaG9o+Q/c7a4PFhEDEhYz8XzFH/qd9zKZ9je36U3xkeHwo9fxrpHyFPMRBiELkX6PKtppbfMwzUsWxSSGH8GQZCGBH4/VBjKH6G9nDJ9Ccil0xPCC5d/8fwz5uBgTV8AFzyXqGvuh/pAAAAAElFTkSuQmCC" class="header__logo" alt="logo">
+      <ul class="header__menu">
+        <li class="header__menu-item">
+          <div class="header__menu-box">
+            <a href="#" class="header__menu-link">Інтерактив</a>
+            <button type="button" class="header__list-button">
+              <svg xmlns="http://www.w3.org/2000/svg" class="header__svg-list" width="11" height="7" viewBox="0 0 11 7">
+                <path d="M10 1L5.5 6L1 1" stroke="black" stroke-width="0.75" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <ul class="header__submenu">
+            <li class="header__submenu-item">Числовий</li>
+            <li class="header__submenu-item">Ігровий</li>
+            <li class="header__submenu-item">Ознайомчий</li>
+          </ul>
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link">Наша команда</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link">Контакти</a>
+        </li>
+      </ul>
+
+
+      <div class="header__theme">
+        <label id="switch" class="switch">
+          <input type="checkbox" onchange="toggleTheme()" id="slider">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <h2 class="header__hello">
+        Вітаємо,
+        <span class="header__hello-value">User</span>
+      </h2>
     </div>
-    </header>
 
+
+  </div>
+</header>
   <section class="years">
     
     <div class="container">
