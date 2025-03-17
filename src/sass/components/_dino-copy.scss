@@ -16,6 +16,7 @@ position: relative;
     }
 
     .games {
+     
         border-radius: 10px;
         width: 720px;
         height: 241px;
@@ -31,7 +32,7 @@ position: relative;
         height: 50px;
         background-image: url(https://raw.githubusercontent.com/Tate-T/fantasy-games/refs/heads/main/src/img/rock-paper-dino/Chromedinoday.webp);
         background-size: 50px 50px;
-        position: relative;
+        position: absolute;
         top: 190px;
 left: 20px;
     }
@@ -40,10 +41,10 @@ left: 20px;
         height: 40px;
         background-image: url(https://raw.githubusercontent.com/Tate-T/fantasy-games/refs/heads/main/src/img/rock-paper-dino/cactus.png);
         background-size: 20px 40px;
-        position: relative;
+        position: absolute;
 
-        top: 150px;
-        left: 580px;
+        top: 200px;
+        left:  720px;
         animation: cactusMov 1.5s infinite linear;
 
 
@@ -72,9 +73,10 @@ left: 20px;
         10% {
           top: 120px;
         }
+
         15% {
           top: 115px;
-        }
+
         20% {
           top: 110px;
         }
@@ -141,15 +143,13 @@ line-height: normal;
 
     .start-plate{
         border: 2px solid red;
-        width: 750px;
-        height: 241px;
+        width: 100%;
+        height: 100%;
         background-color: gray;
         position: absolute;
-        bottom: 230px;
-        right: 20px;
         z-index: 2;
-        top: 115px;
-        right: 360px;
+
+     
     }
     .play-button{
         width: 182px;
