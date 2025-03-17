@@ -6,7 +6,7 @@
     margin-top: 84px;
 
     &__title {
-        color: $back-icon-color;
+        color: inherit;
         font-family: $base-font;
         font-size: 16px;
         font-style: normal;
@@ -44,6 +44,7 @@
     &__input-container {
         display: flex;
         gap: 30px;
+        margin-right: 300px;
     }
 
     &__fix {
@@ -56,15 +57,9 @@
     text-align: center;
     padding: 20px;
 }
-.time__input-container {
-    margin-top: 20px;
-}
+
 .time__number-input {
     padding: 10px;
     width: 150px;
 }
 
-.time__result {
-    margin-top: 20px;
-    font-size: 1.5em;
-}
