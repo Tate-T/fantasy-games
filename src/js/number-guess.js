@@ -14,6 +14,7 @@ document.querySelector('.number__form').addEventListener('submit', (event) => {
         resultElement.style.color = 'red';
         randomNumber = Math.floor(Math.random() * 10) + 1; 
     }
+    numberInput.value = '';
 });
 
 
