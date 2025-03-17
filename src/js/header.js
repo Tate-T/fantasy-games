@@ -26,14 +26,19 @@ window.onload = () => {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-  const modal = document.querySelector(".modal");
+  const modal = document.querySelector(".header__modal");
   const input = document.querySelector("#modal__name-input");
   const saveButton = document.querySelector(".modal__save-button");
   const helloValue = document.querySelector(".header__hello-value");
+  const closeModal = document.querySelector(".modal__close")
 
   // Відкрити модалку при вході на сайт
   modal.setAttribute("data-open", "true");
   modal.classList.add("modal--visible");
+
+ closeModal.addEventListener("click", function () {
+  modal.style.display = "none";
+ })
 
   // Обробник кліку по кнопці "Зберегти"
   saveButton.addEventListener("click", function () {
