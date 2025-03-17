@@ -6,7 +6,7 @@ justify-content:center ;
 
     &__rock-paper-title{
         display:flex ;
-        color: #000;
+        color: inherit;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: #000;
@@ -101,7 +101,7 @@ background: #000;
 display: flex;
 flex-direction: column;
 padding-top: 55px;
-width: 93px;
+width: 95px;
 height: 60px;
 }
 
@@ -122,7 +122,7 @@ height: 60px;
 }
 
 &__total{
-    color: #000;
+    color: inherit;
 font-family: "Montserrat Alternates";
 font-size: 12px;
 font-style: normal;
@@ -131,7 +131,7 @@ line-height: 170%; /* 20.4px */
 }
 
 &__pc-total{
-    color: #000;
+    color: inherit;
 font-family: "Montserrat Alternates";
 font-size: 12px;
 font-style: normal;
@@ -140,7 +140,7 @@ line-height: 170%; /* 20.4px */
 }
 
 &__you-total{
-    color: #000;
+    color: inherit;
 font-family: "Montserrat Alternates";
 font-size: 12px;
 font-style: normal;
@@ -153,4 +153,24 @@ line-height: 170%; /* 20.4px */
     gap: 104px;
 padding-left: 190px;
 }
+
+&__your-choice {
+    width: 86px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* White text color */
+   
+    font-family: "Montserrat Alternates"; /* Font family */
+  }
+
+  &__your-var {
+    color: white;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    align-items: center;
+  }
 }
