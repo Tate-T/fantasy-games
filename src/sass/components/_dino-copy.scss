@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-
+position: relative;
     .title {
         color: inherit;
         font-family: "Montserrat Alternates";
@@ -29,7 +29,7 @@
    .dinos{
         width: 50px;
         height: 50px;
-        background-image: url(././img/rock-paper-dino/Chromedinoday.webp);
+        background-image: url(https://raw.githubusercontent.com/Tate-T/fantasy-games/refs/heads/main/src/img/rock-paper-dino/Chromedinoday.webp);
         background-size: 50px 50px;
         position: relative;
         top: 190px;
@@ -38,7 +38,7 @@ left: 20px;
    .cactus{
         width: 20px;
         height: 40px;
-        background-image: url(././img/rock-paper-dino/cactus.png);
+        background-image: url(https://raw.githubusercontent.com/Tate-T/fantasy-games/refs/heads/main/src/img/rock-paper-dino/cactus.png);
         background-size: 20px 40px;
         position: relative;
 
@@ -105,12 +105,16 @@ line-height: normal;
 
 
     .start-plate{
+        border: 2px solid red;
         width: 750px;
         height: 241px;
         background-color: gray;
-        position: relative;
+        position: absolute;
         bottom: 230px;
         right: 20px;
+        z-index: 2;
+        top: 115px;
+        right: 360px;
     }
     .play-button{
         width: 182px;
