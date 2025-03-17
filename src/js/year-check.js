@@ -10,6 +10,7 @@ document.querySelector('.years__form').addEventListener('submit', (event) => {
         resultElement.textContent = "Ви народилися не у високосний рік!";
         resultElement.style.color = 'red';
     }
+    yearInput.value = '';
 });
 
 function isLeapYear(year) {
